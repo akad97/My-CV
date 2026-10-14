@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alou DEMBELE – CV</title>
+<meta name="description" content="CV d'Alou DEMBELE, ingénieur en technologies mobiles, formateur de formateurs STEM et robotique, enseignant-chercheur en réseaux et informatique à Bamako (Mali).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#18203A; --indigo:#0B3A75; --indigo-2:#1565C0; --ochre:#3D9BF2; --ochre-ink:#1565C0; --ochre-soft:#CFE6FF;
+  --paper:#FFFFFF; --page:#E3EBF5; --tint:#EEF4FB; --muted:#56637A; --line:#D6E1EE;
+  --sans:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.55 var(--serif)}
+:focus-visible{outline:2px solid var(--ochre);outline-offset:2px}
+.sheet{max-width:1040px;margin:28px auto 110px;background:var(--paper);box-shadow:0 1px 2px rgba(24,32,58,.08),0 14px 44px rgba(24,32,58,.12)}
+
+/* En-tête */
+.hero{position:relative;display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center;padding:38px 40px 34px;background:var(--indigo);color:#fff;overflow:hidden}
+.photo-wrap{position:relative;z-index:1}
+.hero.nophoto{grid-template-columns:1fr}
+.photo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--ochre);display:block;background:var(--indigo-2)}
+.photo.ph{display:grid;place-items:center;font:700 46px var(--sans);color:var(--ochre-soft)}
+.photo-act{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.id{position:relative;z-index:1;padding-right:100px;min-width:0}
+.name{font:700 46px/1.05 var(--sans);letter-spacing:-.02em;margin:0}
+.title{font:600 18px/1.35 var(--sans);color:var(--ochre-soft);margin:.55em 0 0}
+.subtitle{margin:.3em 0 0;color:#C9D0E8;font-size:15px}
+.contacts{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:7px 22px;font:14px/1.3 var(--sans)}
+.contacts li{display:flex;align-items:center;gap:8px;min-width:0}
+.contacts a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);overflow-wrap:anywhere}
+.contacts a:hover{border-bottom-color:var(--ochre)}
+.ic svg{width:16px;height:16px;display:block;fill:none;stroke:var(--ochre);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.motif{position:absolute;right:0;top:0;bottom:0;width:118px}
+.motif svg{width:100%;height:100%;display:block}
+
+/* Colonnes */
+.cols{display:grid;grid-template-columns:300px minmax(0,1fr);grid-template-areas:"side main"}
+main{grid-area:main;padding:34px 40px 18px 36px;min-width:0}
+aside{grid-area:side;background:var(--tint);padding:34px 24px 18px 32px;border-right:1px solid var(--line);min-width:0}
+.sec{margin:0 0 30px}
+.sec>h2{font:700 19px/1.2 var(--sans);color:var(--indigo);margin:0 0 14px;display:flex;align-items:center;gap:10px}
+.sec>h2::before{content:"";width:9px;height:9px;background:var(--ochre);transform:rotate(45deg);flex:none}
+aside .sec{margin-bottom:26px}
+aside .sec>h2{font-size:16.5px}
+h3{margin:0}
+.row{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+
+.annex{padding:30px 40px 8px;border-top:1px solid var(--line)}
+.annex .proj{grid-template-columns:repeat(3,1fr)}
+.annex .twocol{grid-template-columns:1fr 1fr;gap:0 28px}
+.cert .lead{margin-right:6px}
+.cert .meta{display:inline;margin:0}
+.annex .sec:last-child{margin-bottom:8px}
+.profile{margin:0;white-space:pre-line;font-size:15.5px;line-height:1.6}
+
+/* Expérience, formation */
+.gtitle{font:600 14px/1.3 var(--sans);color:var(--muted);margin:20px 0 12px}
+.group:first-of-type .gtitle{margin-top:2px}
+.job{position:relative;padding:0 0 18px 20px;border-left:2px solid var(--line);margin-left:4px}
+.job:last-of-type{padding-bottom:6px}
+.job::before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--indigo-2)}
+.job-head{display:flex;justify-content:space-between;align-items:baseline;gap:4px 14px;flex-wrap:wrap}
+.role{font:600 16px/1.3 var(--sans);color:var(--ink)}
+.period{font:600 13px/1.3 var(--sans);color:var(--ochre-ink);white-space:nowrap}
+.meta{margin:2px 0 6px;color:var(--muted);font-size:14px;font-style:italic}
+.meta>.f:not([hidden])~.f:not([hidden])::before{content:", "}
+.bul{margin:0;padding-left:18px}
+.bul li{margin:3px 0}
+li::marker{color:var(--ochre)}
+
+/* Projets */
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:14px 24px}
+.proj h3{font:600 15px/1.3 var(--sans);color:var(--indigo)}
+.proj p{margin:3px 0 0;font-size:14.5px}
+
+/* Listes simples */
+.plain{list-style:none;padding:0;margin:0}
+.plain>li{margin:0 0 10px}
+.plain strong,.plain .lead{font:600 15px/1.3 var(--sans)}
+.plain .meta{margin:1px 0 0}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.cert-g{font:600 14px/1.3 var(--sans);color:var(--muted);margin:16px 0 8px}
+.cert-groups{columns:2;column-gap:32px}
+.cert-group{break-inside:avoid;display:inline-block;width:100%;vertical-align:top}
+.cert-group .cert{margin-bottom:9px}
+.cert-g:first-child{margin-top:0}
+.verify{font:500 13px var(--sans);color:var(--indigo-2);margin-left:6px}
+.dist>li{position:relative;padding-left:18px}
+.dist>li::before{content:"";position:absolute;left:2px;top:7px;width:7px;height:7px;background:var(--ochre);transform:rotate(45deg)}
+
+/* Colonne latérale */
+.skill-g{margin:0 0 14px}
+.skill-g h3{font:600 14px/1.3 var(--sans);color:var(--indigo);margin:0 0 5px}
+.skill-g .bul{font-size:14px;padding-left:16px}
+.skill-g .bul li{margin:2px 0}
+.lang{margin:0 0 10px}
+.lang .row{justify-content:space-between}
+.lang-name{font:600 14.5px var(--sans)}
+.lang-level{font-size:13.5px;color:var(--muted)}
+.dots{display:flex;gap:4px;margin-top:4px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--line);border:0;padding:0}
+.dot.on{background:var(--indigo-2)}
+button.dot{cursor:pointer;width:14px;height:14px}
+.inline{list-style:none;padding:0;margin:0;font-size:14px}
+.inline li{display:inline}
+.inline li:not(:last-child)::after{content:", "}
+.tool-g{margin:0 0 10px}
+.tool-g h3{font:600 14px/1.3 var(--sans);color:var(--indigo);margin:0 0 2px}
+.ref{margin:0 0 10px;font-size:14px}
+.ref .lead{font:600 14.5px var(--sans);display:block}
+.ref a{color:var(--indigo-2);text-decoration:none;overflow-wrap:anywhere}
+.ref-note{font-size:13px;color:var(--muted);font-style:italic;margin:4px 0 0}
+
+.foot{display:flex;justify-content:space-between;gap:12px;padding:14px 40px;border-top:1px solid var(--line);font:13px var(--sans);color:var(--muted)}
+
+/* Texte justifié */
+main .profile,main .bul li,.annex .proj p,.annex .plain p.meta{text-align:justify;text-align-last:left;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:6 3 3}
+.profile,.bul li,.proj p{overflow-wrap:break-word}
+
+/* Attestation sur l'honneur (version signée) */
+.attest{padding:22px 40px 12px;border-top:1px solid var(--line);break-inside:avoid;display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:8px 32px;align-items:end}
+.attest-hint{grid-column:1/-1}
+.attest-hint{font:13px/1.45 var(--sans);color:var(--muted);background:var(--tint);padding:8px 10px;border-radius:8px;margin:0 0 12px}
+.attest-text{margin:0;align-self:start;font-style:italic;text-align:justify;text-align-last:left}
+.sig{width:100%;text-align:center;font:14px/1.4 var(--sans)}
+.sig p{margin:0}
+.sig-space{height:64px;border-bottom:1px solid var(--muted);margin:8px 0 6px}
+.sig-img{display:block;max-height:80px;max-width:100%;margin:6px auto}
+.sig-name{font-weight:600}
+
+/* Barre d'actions */
+.toolbar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:4px;flex-wrap:wrap;justify-content:center;padding:7px;background:var(--ink);border-radius:14px;box-shadow:0 10px 30px rgba(24,32,58,.3);z-index:50;max-width:calc(100% - 24px)}
+.toolbar button{font:600 14px var(--sans);border:0;border-radius:9px;padding:9px 14px;background:transparent;color:#fff;cursor:pointer}
+.toolbar button:hover{background:rgba(255,255,255,.12)}
+.toolbar button.primary{background:var(--ochre);color:var(--ink)}
+.toolbar button.primary:hover{background:#5AACF5}
+.edit-only{display:none}
+body.editing .edit-only{display:contents}
+body.editing .view-only{display:none}
+.only-local{display:none!important}
+body.can-edit:not(.editing) .only-local{display:inline-block!important}
+.banner{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:60;max-width:min(720px,calc(100% - 24px));background:#fff;border:1px solid var(--line);border-left:4px solid var(--ochre);border-radius:10px;padding:12px 14px;font:14px/1.45 var(--sans);box-shadow:0 10px 30px rgba(24,32,58,.18);display:flex;gap:10px;align-items:flex-start}
+.banner[hidden]{display:none}
+.banner p{margin:0;flex:1}
+.banner button{font:600 13px var(--sans);border:1px solid var(--line);background:var(--tint);border-radius:7px;padding:5px 10px;cursor:pointer;color:var(--ink);white-space:nowrap}
+.status{position:fixed;right:16px;bottom:78px;font:12.5px var(--sans);color:var(--muted);background:#fff;padding:4px 10px;border-radius:999px;border:1px solid var(--line);display:none}
+body.editing .status{display:block}
+
+/* Mode édition */
+body.editing [contenteditable]{outline:1px dashed rgba(52,71,156,.4);outline-offset:2px;border-radius:3px;min-width:3ch;cursor:text}
+body.editing .hero [contenteditable]{outline-color:rgba(255,255,255,.45)}
+body.editing [contenteditable]:focus{outline:2px solid var(--ochre)}
+body.editing [contenteditable]:empty::before{content:attr(data-ph);color:#9AA2B5;font-style:italic}
+body.editing .hero [contenteditable]:empty::before{color:#9FA9CF}
+body.editing .bul li>span[contenteditable],body.editing .inline li>span[contenteditable]{display:inline-block}
+body.editing .inline li{display:block;margin:3px 0}
+body.editing .inline li::after{content:none}
+.ctl{display:inline-flex;gap:3px;margin-left:6px;vertical-align:middle;font-style:normal}
+.cb{font:600 12px/1 var(--sans);border:1px solid var(--line);background:#fff;color:var(--indigo);border-radius:6px;min-width:22px;height:22px;cursor:pointer;padding:0 5px}
+.cb:hover{border-color:var(--indigo-2)}
+.cb.del:hover{color:#B3261E;border-color:#B3261E}
+.cb.wide{padding:0 9px;height:26px}
+.add{display:inline-block;font:600 13px var(--sans);border:1px dashed var(--indigo-2);background:transparent;color:var(--indigo-2);border-radius:8px;padding:5px 10px;margin:4px 0 12px;cursor:pointer}
+.add:hover{background:var(--tint)}
+.url-edit{display:block;font:12.5px var(--sans);color:var(--indigo-2);margin-top:2px}
+
+/* Version ATS : une colonne, sans décor */
+body.ats{--serif:Arial,Helvetica,sans-serif;--sans:Arial,Helvetica,sans-serif;--ochre-ink:#000;--indigo:#000;--indigo-2:#000;--muted:#333}
+body.ats .hero{background:#fff;color:#000;grid-template-columns:1fr;padding:32px 40px 18px;border-bottom:1.5px solid #000}
+body.ats .photo-wrap,body.ats .motif,body.ats .ic{display:none}
+body.ats .id{padding-right:0}
+body.ats .name{font-size:32px;letter-spacing:0}
+body.ats .title,body.ats .subtitle{color:#000}
+body.ats .contacts{display:block}
+body.ats .contacts li{display:block}
+body.ats .contacts a{color:#000;border:0}
+body.ats .cols{display:block}
+body.ats aside{background:none;border:0;padding:0 40px 10px}
+body.ats main{padding:24px 40px 0}
+body.ats .sec>h2{border-bottom:1px solid #000;padding-bottom:3px;font-size:17px}
+body.ats .sec>h2::before{display:none}
+body.ats .job{border:0;padding-left:0;margin-left:0}
+body.ats .job::before{display:none}
+body.ats .proj,body.ats .twocol{display:block}
+body.ats .cert-groups{columns:1}
+body.ats .annex{padding:0 40px;border:0}
+body.ats .attest{padding:16px 40px 8px}
+body.ats .proj>div{margin-bottom:10px}
+body.ats .dots{display:none}
+body.ats .dist>li{padding-left:0}
+body.ats .dist>li::before{display:none}
+body.ats li::marker{color:#000}
+
+/* Téléphone */
+@media (max-width:760px){
+  .sheet{margin:0 0 120px;box-shadow:none}
+  .hero{grid-template-columns:1fr;padding:28px 18px 26px;gap:16px}
+  .photo{width:112px;height:112px}
+  .name{font-size:34px}
+  .title{font-size:16.5px}
+  .id{padding-right:40px}
+  .motif{width:44px;opacity:.6}
+  .cols{grid-template-columns:1fr;grid-template-areas:"main" "side"}
+  main{padding:26px 18px 6px}
+  aside{padding:26px 18px 10px;border-right:0;border-top:1px solid var(--line)}
+  .proj,.twocol{grid-template-columns:1fr}
+  .cert-groups{columns:1}
+  .attest{padding:22px 18px 10px;grid-template-columns:1fr}
+  .sig{max-width:260px;margin-left:auto}
+  .annex .proj,.annex .twocol{grid-template-columns:1fr}
+  .annex{padding:26px 18px 6px}
+  .foot{padding:14px 18px;flex-direction:column;gap:2px}
+  body.ats .hero,body.ats main{padding-left:18px;padding-right:18px}
+  body.ats aside{padding:0 18px 10px}
+  .toolbar{bottom:10px}
+  .toolbar button{padding:8px 10px;font-size:13px}
+  .status{bottom:118px}
+}
+
+/* Impression / PDF (A4) */
+@page{size:A4;margin:10mm 0 10mm 0}
+@page:first{margin-top:0}
+@media print{
+  html,body{background:#fff}
+  body{font-size:8.9pt;line-height:1.3;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{margin:0;max-width:none;box-shadow:none}
+  .toolbar,.banner,.status,.ctl,.add,.photo-act,.url-edit,.attest-hint{display:none!important}
+  .attest{padding:3mm 13mm 0;border-top:.5pt solid var(--line);grid-template-columns:minmax(0,1fr) 58mm;gap:2mm 8mm}
+  .attest-text{font-size:9.1pt}
+  .sig{font-size:9pt}
+  .sig-space{height:12mm;margin:1mm 0 1mm}
+  .sig-img{max-height:18mm}
+  .hero{grid-template-columns:27mm 1fr;gap:7mm;padding:7mm 14mm 5mm}
+  .photo{width:28mm;height:28mm;border-width:2.5pt}
+  .name{font-size:24pt}
+  .title{font-size:11.5pt}
+  .subtitle{font-size:9.5pt}
+  .contacts{font-size:9pt;margin-top:3mm;gap:1.2mm 6mm}
+  .id{padding-right:22mm}
+  .motif{width:20mm}
+  .cols{grid-template-columns:56mm minmax(0,1fr)}
+  aside{background:none;padding:6mm 4mm 0 13mm;border-right:.5pt solid var(--line)}
+  main{padding:6mm 13mm 0 6mm}
+  .annex{padding:5mm 13mm 0;border-top:.5pt solid var(--line)}
+  .annex .proj{gap:2mm 6mm}
+  .annex .twocol{column-gap:6mm}
+  .annex .plain .lead{font-size:9.2pt}
+  .annex .plain .meta,.annex .verify{font-size:8pt}
+  .annex .proj p{font-size:8.6pt}
+  .annex .proj h3{font-size:9.4pt}
+  .annex .twocol>li{margin-bottom:1.2mm}
+  .cert-g{margin:2mm 0 1mm}
+  .cert-groups{column-gap:7mm}
+  .cert-group .cert{margin-bottom:1mm}
+  .annex .twocol>li{margin-bottom:1.6mm}
+  .sec{margin-bottom:4mm}
+  aside .sec{margin-bottom:4.5mm}
+  .sec>h2{font-size:12pt;margin-bottom:2.2mm;break-after:avoid}
+  aside .sec>h2{font-size:10.5pt}
+  .gtitle{font-size:9.5pt;margin:3mm 0 2mm}
+  .role,.plain strong,.plain .lead{font-size:10pt}
+  .period,.meta,.lang-level,.verify{font-size:8.5pt}
+  .meta{margin:0 0 1mm}
+  .profile{font-size:9.3pt;line-height:1.38}
+  .annex .sec{margin-bottom:3.5mm}
+  .annex .sec>h2{margin-bottom:1.8mm}
+  .bul li{margin:.4mm 0}
+  .skill-g .bul,.inline,.ref,.proj p{font-size:8.8pt}
+  .skill-g{margin-bottom:2.5mm}
+  .skill-g h3,.tool-g h3,.lang-name,.ref .lead{font-size:9.3pt}
+  .lang{margin-bottom:2mm}
+  .dot{width:2.3mm;height:2.3mm}
+  .proj{gap:2.5mm 6mm}
+  .proj h3{font-size:9.8pt}
+  .plain>li{margin-bottom:1.8mm}
+  .cert-g{font-size:9.3pt;margin:3mm 0 1.5mm}
+  .job-head,.proj>div,.plain>li,.ref,.lang,.skill-g,.tool-g{break-inside:avoid}
+  .job-head,.meta{break-after:avoid}
+  .gtitle,.cert-g{break-after:avoid}
+  .job{padding-bottom:1.8mm}
+  .job::before{width:9px;height:9px;left:-5.5px;top:3px}
+  a{color:inherit;text-decoration:none}
+  .foot{padding:2mm 13mm 0;border-top:.5pt solid var(--line);font-size:8pt;break-before:avoid}
+  .annex .sec:last-child{margin-bottom:2mm}
+  .cert-g{margin-top:2.5mm}
+  body.ats .hero{padding:12mm 14mm 5mm}
+  body.ats main{padding:5mm 14mm 0}
+  body.ats aside,body.ats .annex{padding:0 14mm}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body class="">
+<div class="banner" id="banner" role="status" hidden=""></div>
+<div class="sheet" id="cv"><header class="hero nophoto"><div class="id"><h1 class="f name" data-path="identity.name" data-ph="Prénom NOM">Alou DEMBELE</h1><p class="f title" data-path="identity.title" data-ph="Titre professionnel">Ingénieur en technologies mobiles et enseignant</p><p class="f subtitle" data-path="identity.subtitle" data-ph="Spécialités" hidden=""></p><ul class="contacts"><li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></span><span class="f" data-path="identity.location" data-ph="Ville, pays">Bamako, Mali</span></li><li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg></span><a class="f" href="tel:+22370887250">+223 70 88 72 50</a></li><li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span><a class="f" href="mailto:aloudembele14@gmail.com">aloudembele14@gmail.com</a></li><li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg></span><a class="f" href="https://linkedin.com/in/aloukoniba-dembele220a5317a" target="_blank" rel="noopener">linkedin.com/in/aloukoniba-dembele220a5317a</a></li><li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"></path></svg></span><span class="f" data-path="identity.nationality" data-ph="Nationalité">Nationalité malienne</span></li></ul></div><div class="motif"><svg viewBox="0 0 118 400" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><defs><pattern id="bogolan" width="40" height="44" patternUnits="userSpaceOnUse"><path d="M0 12 L10 2 L20 12 L30 2 L40 12" fill="none" stroke="#3D9BF2" stroke-width="2.2"></path><rect x="15.5" y="22.5" width="9" height="9" transform="rotate(45 20 27)" fill="none" stroke="#CFE6FF" stroke-width="1.6"></rect><circle cx="20" cy="27" r="1.6" fill="#3D9BF2"></circle><circle cx="4" cy="36" r="1.7" fill="#CFE6FF"></circle><circle cx="36" cy="36" r="1.7" fill="#CFE6FF"></circle></pattern></defs><rect width="118" height="400" fill="url(#bogolan)" opacity=".5"></rect><rect width="3" height="400" fill="#3D9BF2"></rect></svg></div></header><div class="cols"><main><section class="sec" id="profil"><h2>Profil</h2><p class="f profile" data-path="profile" data-ph="Résumé professionnel en 4 à 6 lignes">Ingénieur en technologies mobiles et spécialiste de la formation en STEM, robotique et numérique éducatif, je conçois et pilote depuis 2018 des programmes de formation innovants destinés aux élèves, aux enseignants et aux étudiants. Certifié formateur de formateurs VEX Robotics et instructeur Cisco CCNA, je combine expertise technique, ingénierie pédagogique et accompagnement de talents pour développer les compétences numériques et scientifiques. Mon parcours est marqué par le pilotage d’un projet de collecte de données vocales bambara–français en partenariat avec Google et l’encadrement d’équipes de robotique jusqu’au Championnat du monde VEX. J’œuvre à la croisée de l’éducation, de l’innovation technologique et de la valorisation des langues nationales, avec une ambition : faire du numérique un levier de développement des compétences et de transformation éducative.</p></section><section class="sec" id="experience"><h2>Expérience professionnelle</h2><div class="group"><div class="row"><h3 class="f gtitle" data-path="experience.0.group" data-ph="Catégorie">Formation et ingénierie pédagogique</h3></div><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.0.items.0.role" data-ph="Intitulé du poste">Responsable de la formation, enseignement supérieur et professionnel</h3></div><span class="f period" data-path="experience.0.items.0.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">2024 – aujourd'hui</span></div><p class="meta"><span class="f" data-path="experience.0.items.0.org" data-ph="Organisation">RobotsMali AI4D Lab</span><span class="f" data-path="experience.0.items.0.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.0.items.0.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Élaboration du programme IA pratique.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.0.items.1.role" data-ph="Intitulé du poste">Formateur STEM et robotique, formateur de formateurs</h3></div><span class="f period" data-path="experience.0.items.1.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">08/2018 – aujourd'hui</span></div><p class="meta"><span class="f" data-path="experience.0.items.1.org" data-ph="Organisation">RobotsMali</span><span class="f" data-path="experience.0.items.1.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.0.items.1.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Conception de programmes et de modules de formation en STEM, robotique et informatique ; production des supports pédagogiques associés.</span></li><li><span class="f" data-path="experience.0.items.1.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Organisateur et formateur des formateurs du programme de formation des formateurs STEM &amp; Robotique, mené en 2020 avec le Ministère de l'Enseignement supérieur et de la Recherche scientifique, sous la supervision de l'ENETP.</span></li><li><span class="f" data-path="experience.0.items.1.bullets.2" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Organisation et formation des formateurs du camp STEM &amp; Robotique depuis 2019.</span></li><li><span class="f" data-path="experience.0.items.1.bullets.3" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Animation de comités scientifiques dans les écoles.</span></li><li><span class="f" data-path="experience.0.items.1.bullets.4" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Conception du programme de formation en robotique du Prytanée militaire de Kati.</span></li><li><span class="f" data-path="experience.0.items.1.bullets.5" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Participation à l'atelier de révision des programmes du CIAR-Mali (octobre 2026).</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.0.items.2.role" data-ph="Intitulé du poste">Coach d'équipes de robotique</h3></div><span class="f period" data-path="experience.0.items.2.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">03/2021 – aujourd'hui</span></div><p class="meta"><span class="f" data-path="experience.0.items.2.org" data-ph="Organisation">RobotsMali</span><span class="f" data-path="experience.0.items.2.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.0.items.2.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Encadrement d'équipes en compétitions internationales : PARC 2022 à Dakar et Championnat du monde VEX 2023 au Texas (États-Unis).</span></li><li><span class="f" data-path="experience.0.items.2.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Coordination de projets interdisciplinaires associant mécanique, électronique et programmation.</span></li><li><span class="f" data-path="experience.0.items.2.bullets.2" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Rédaction de rapports techniques sur les spécifications et les performances des robots.</span></li></ul></article></div><div class="group"><div class="row"><h3 class="f gtitle" data-path="experience.1.group" data-ph="Catégorie">Enseignement</h3></div><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.1.items.0.role" data-ph="Intitulé du poste">Enseignant de sciences</h3></div><span class="f period" data-path="experience.1.items.0.period" data-ph="Période (ex. 03/2021 – aujourd’hui)" hidden=""></span></div><p class="meta"><span class="f" data-path="experience.1.items.0.org" data-ph="Organisation">Enko Bamako, Programme d'éducation intermédiaire (PEI) du Baccalauréat International</span><span class="f" data-path="experience.1.items.0.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.1.items.0.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Enseignement des sciences dans un curriculum fondé sur les compétences.</span></li><li><span class="f" data-path="experience.1.items.0.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Évaluation des élèves par critères et descripteurs de niveaux, avec une rétroaction formative régulière.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.1.items.1.role" data-ph="Intitulé du poste">Assistant enseignant-chercheur</h3></div><span class="f period" data-path="experience.1.items.1.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">06/2024 – aujourd'hui</span></div><p class="meta"><span class="f" data-path="experience.1.items.1.org" data-ph="Organisation">IAM</span><span class="f" data-path="experience.1.items.1.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.1.items.1.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Enseignement de la sécurité des réseaux WAN/LAN, des tests d'interfaces et de l'optimisation des performances.</span></li><li><span class="f" data-path="experience.1.items.1.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Animation d'ateliers de renforcement des compétences transversales.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.1.items.2.role" data-ph="Intitulé du poste">Assistant enseignant-chercheur</h3></div><span class="f period" data-path="experience.1.items.2.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">11/2021 – aujourd'hui</span></div><p class="meta"><span class="f" data-path="experience.1.items.2.org" data-ph="Organisation">ESTM</span><span class="f" data-path="experience.1.items.2.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.1.items.2.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Élaboration et mise à jour de programmes d'études.</span></li><li><span class="f" data-path="experience.1.items.2.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Enseignement de la programmation, de l'administration réseau, de la téléphonie d'entreprise et de la gestion de projet numérique.</span></li><li><span class="f" data-path="experience.1.items.2.bullets.2" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Conception d'évaluations numériques interactives (examens et quiz en ligne).</span></li><li><span class="f" data-path="experience.1.items.2.bullets.3" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Suivi et évaluation des projets de recherche des étudiants ; animation d'ateliers de compétences transversales.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.1.items.3.role" data-ph="Intitulé du poste">Assistant enseignant-chercheur</h3></div><span class="f period" data-path="experience.1.items.3.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">03/2023 – 06/2023</span></div><p class="meta"><span class="f" data-path="experience.1.items.3.org" data-ph="Organisation">Université Mary Saint Claire</span><span class="f" data-path="experience.1.items.3.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.1.items.3.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Enseignement des réseaux d'entreprise et de la téléphonie d'entreprise.</span></li></ul></article></div><div class="group"><div class="row"><h3 class="f gtitle" data-path="experience.2.group" data-ph="Catégorie">Gestion de projets et données</h3></div><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.2.items.0.role" data-ph="Intitulé du poste">Chef de projet, données vocales en bambara</h3></div><span class="f period" data-path="experience.2.items.0.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">03/2022 – 11/2022</span></div><p class="meta"><span class="f" data-path="experience.2.items.0.org" data-ph="Organisation">RobotsMali, en partenariat avec Google</span><span class="f" data-path="experience.2.items.0.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.2.items.0.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Pilotage de la collecte, de la transcription et de la traduction de données vocales bambara–français destinées à un modèle de traduction automatique.</span></li><li><span class="f" data-path="experience.2.items.0.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Rédaction du cahier des charges ; définition de la méthodologie, du planning, des ressources et des livrables.</span></li><li><span class="f" data-path="experience.2.items.0.bullets.2" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Coordination des équipes internes, des intervenants externes et des prestataires ; animation des réunions de suivi.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.2.items.1.role" data-ph="Intitulé du poste">Analyste de données, projet Bayelemabaga</h3></div><span class="f period" data-path="experience.2.items.1.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">11/2021 – 11/2022</span></div><p class="meta"><span class="f" data-path="experience.2.items.1.org" data-ph="Organisation">RobotsMali</span><span class="f" data-path="experience.2.items.1.place" data-ph="Lieu">Bamako</span></p><ul class="bul"><li><span class="f" data-path="experience.2.items.1.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Contrôle de la qualité et de la fiabilité du corpus textuel français–bambara destiné à la traduction automatique.</span></li><li><span class="f" data-path="experience.2.items.1.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Rédaction de la documentation technique et formation des utilisateurs aux bonnes pratiques.</span></li></ul></article></div><div class="group"><div class="row"><h3 class="f gtitle" data-path="experience.3.group" data-ph="Catégorie">Recherche et engagement scientifique</h3></div><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.3.items.0.role" data-ph="Intitulé du poste">Recherche sur les langues et l'intelligence artificielle pour l'éducation</h3></div><span class="f period" data-path="experience.3.items.0.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">2024 – aujourd'hui</span></div><p class="meta"><span class="f" data-path="experience.3.items.0.org" data-ph="Organisation" hidden=""></span><span class="f" data-path="experience.3.items.0.place" data-ph="Lieu" hidden=""></span></p><ul class="bul"><li><span class="f" data-path="experience.3.items.0.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Rédaction d'un article sur Claude et les treize langues nationales du Mali.</span></li><li><span class="f" data-path="experience.3.items.0.bullets.1" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Contribution au projet GAIFE de RobotsMali.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="experience.3.items.1.role" data-ph="Intitulé du poste">Membre de la cohorte d'ambassadeurs</h3></div><span class="f period" data-path="experience.3.items.1.period" data-ph="Période (ex. 03/2021 – aujourd’hui)">01/2023 – aujourd'hui</span></div><p class="meta"><span class="f" data-path="experience.3.items.1.org" data-ph="Organisation">Next Einstein Forum, African Institute for Mathematical Sciences (AIMS)</span><span class="f" data-path="experience.3.items.1.place" data-ph="Lieu" hidden=""></span></p><ul class="bul"><li><span class="f" data-path="experience.3.items.1.bullets.0" data-ph="Réalisation (ex. Conception de… ; résultat obtenu)">Promotion des sciences auprès des jeunes, notamment lors de la Semaine africaine des sciences au Mali.</span></li></ul></article></div></section><section class="sec" id="formation"><h2>Formation</h2><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="education.0.degree" data-ph="Diplôme">Master d'ingénierie, Technologies mobiles</h3></div><span class="f period" data-path="education.0.period" data-ph="Période">2018 – 2021</span></div><p class="meta"><span class="f" data-path="education.0.org" data-ph="Établissement">École Nationale d'Ingénieurs Abderhamane Baba Touré (ENI-ABT), Bamako</span><span class="f" data-path="education.0.note" data-ph="Spécialité, mention">Génie informatique et télécommunications, mention Bien</span></p><ul class="bul"><li><span class="f" data-path="education.0.bullets.0" data-ph="Compétences acquises">Applications mobiles, architectures de réseaux sans fil, IoT, analyse de données, sécurité et cryptographie.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="education.1.degree" data-ph="Diplôme">Licence, Informatique et télécommunications</h3></div><span class="f period" data-path="education.1.period" data-ph="Période">2014 – 2018</span></div><p class="meta"><span class="f" data-path="education.1.org" data-ph="Établissement">École Nationale d'Ingénieurs Abderhamane Baba Touré (ENI-ABT), Bamako</span><span class="f" data-path="education.1.note" data-ph="Spécialité, mention" hidden=""></span></p><ul class="bul"><li><span class="f" data-path="education.1.bullets.0" data-ph="Compétences acquises">Réseaux LAN/WAN et mobiles, bases de données, VoIP, programmation et développement logiciel.</span></li></ul></article><article class="job"><div class="job-head"><div class="row"><h3 class="f role" data-path="education.2.degree" data-ph="Diplôme">DUT, Mathématiques, physique et chimie</h3></div><span class="f period" data-path="education.2.period" data-ph="Période">2015 – 2017</span></div><p class="meta"><span class="f" data-path="education.2.org" data-ph="Établissement">Institut de Formation des Maîtres (IFM), Bamako</span><span class="f" data-path="education.2.note" data-ph="Spécialité, mention" hidden=""></span></p><ul class="bul"><li><span class="f" data-path="education.2.bullets.0" data-ph="Compétences acquises">Pédagogie et gestion de classe, évaluation et suivi des progrès des élèves.</span></li></ul></article></section></main><aside><section class="sec" id="competences"><h2>Compétences clés</h2><div class="skill-g"><div class="row"><h3 class="f" data-path="skills.0.group" data-ph="Domaine">Pédagogie et formation</h3></div><ul class="bul"><li><span class="f" data-path="skills.0.items.0" data-ph="Compétence">Conception et mise en œuvre de programmes de formation</span></li><li><span class="f" data-path="skills.0.items.1" data-ph="Compétence">Formation de formateurs et encadrement d'équipes</span></li><li><span class="f" data-path="skills.0.items.2" data-ph="Compétence">Approche par compétences et évaluation critériée</span></li><li><span class="f" data-path="skills.0.items.3" data-ph="Compétence">Conception de supports et d'outils pédagogiques</span></li><li><span class="f" data-path="skills.0.items.4" data-ph="Compétence">Dispositifs hybrides et numérique éducatif</span></li></ul></div><div class="skill-g"><div class="row"><h3 class="f" data-path="skills.1.group" data-ph="Domaine">Technique</h3></div><ul class="bul"><li><span class="f" data-path="skills.1.items.0" data-ph="Compétence">Réseaux LAN/WAN : routage, commutation, VLAN, OSPF</span></li><li><span class="f" data-path="skills.1.items.1" data-ph="Compétence">Sécurité réseau : ACL, NAT, bonnes pratiques</span></li><li><span class="f" data-path="skills.1.items.2" data-ph="Compétence">Technologies mobiles et IoT</span></li><li><span class="f" data-path="skills.1.items.3" data-ph="Compétence">Robotique : VEX IQ, VEX V5, VEX AIM, Arduino</span></li><li><span class="f" data-path="skills.1.items.4" data-ph="Compétence">Intelligence artificielle et traitement automatique du langage</span></li></ul></div><div class="skill-g"><div class="row"><h3 class="f" data-path="skills.2.group" data-ph="Domaine">Gestion de projet et données</h3></div><ul class="bul"><li><span class="f" data-path="skills.2.items.0" data-ph="Compétence">Cahier des charges, planning, ressources, livrables</span></li><li><span class="f" data-path="skills.2.items.1" data-ph="Compétence">Coordination multi-acteurs et prestataires</span></li><li><span class="f" data-path="skills.2.items.2" data-ph="Compétence">Collecte, annotation et contrôle qualité de données</span></li><li><span class="f" data-path="skills.2.items.3" data-ph="Compétence">Documentation technique et rapports</span></li></ul></div><div class="skill-g"><div class="row"><h3 class="f" data-path="skills.3.group" data-ph="Domaine">Savoir-être</h3></div><ul class="bul"><li><span class="f" data-path="skills.3.items.0" data-ph="Compétence">Leadership et travail en équipe</span></li><li><span class="f" data-path="skills.3.items.1" data-ph="Compétence">Communication et prise de parole en public</span></li><li><span class="f" data-path="skills.3.items.2" data-ph="Compétence">Rigueur, respect, ponctualité</span></li></ul></div></section><section class="sec" id="langues"><h2>Langues</h2><div class="lang"><div class="row"><span><span class="f lang-name" data-path="languages.0.name" data-ph="Langue">Français</span></span><span class="f lang-level" data-path="languages.0.level" data-ph="Niveau">Courant, langue de travail</span></div><div class="dots" aria-hidden="true"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div><div class="lang"><div class="row"><span><span class="f lang-name" data-path="languages.1.name" data-ph="Langue">Bambara</span></span><span class="f lang-level" data-path="languages.1.level" data-ph="Niveau">Langue maternelle</span></div><div class="dots" aria-hidden="true"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div><div class="lang"><div class="row"><span><span class="f lang-name" data-path="languages.2.name" data-ph="Langue">Anglais</span></span><span class="f lang-level" data-path="languages.2.level" data-ph="Niveau">Opérationnel</span></div><div class="dots" aria-hidden="true"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div><div class="lang"><div class="row"><span><span class="f lang-name" data-path="languages.3.name" data-ph="Langue">Arabe</span></span><span class="f lang-level" data-path="languages.3.level" data-ph="Niveau">Notions</span></div><div class="dots" aria-hidden="true"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div></section><section class="sec" id="outils"><h2>Outils numériques</h2><div class="tool-g"><div class="row"><h3 class="f" data-path="tools.0.group" data-ph="Catégorie">Collaboration</h3></div><ul class="inline"><li><span class="f" data-path="tools.0.items.0" data-ph="Outil">Google Workspace</span></li><li><span class="f" data-path="tools.0.items.1" data-ph="Outil">Microsoft OneDrive</span></li><li><span class="f" data-path="tools.0.items.2" data-ph="Outil">Zoom</span></li><li><span class="f" data-path="tools.0.items.3" data-ph="Outil">Google Meet</span></li><li><span class="f" data-path="tools.0.items.4" data-ph="Outil">Slack</span></li><li><span class="f" data-path="tools.0.items.5" data-ph="Outil">Trello</span></li></ul></div><div class="tool-g"><div class="row"><h3 class="f" data-path="tools.1.group" data-ph="Catégorie">Création</h3></div><ul class="inline"><li><span class="f" data-path="tools.1.items.0" data-ph="Outil">Canva</span></li><li><span class="f" data-path="tools.1.items.1" data-ph="Outil">Adobe</span></li><li><span class="f" data-path="tools.1.items.2" data-ph="Outil">Tinkercad</span></li><li><span class="f" data-path="tools.1.items.3" data-ph="Outil">WordPress</span></li></ul></div><div class="tool-g"><div class="row"><h3 class="f" data-path="tools.2.group" data-ph="Catégorie">Programmation</h3></div><ul class="inline"><li><span class="f" data-path="tools.2.items.0" data-ph="Outil">Python</span></li><li><span class="f" data-path="tools.2.items.1" data-ph="Outil">Java</span></li><li><span class="f" data-path="tools.2.items.2" data-ph="Outil">C++</span></li><li><span class="f" data-path="tools.2.items.3" data-ph="Outil">HTML/CSS/JavaScript</span></li></ul></div></section><section class="sec" id="interets"><h2>Centres d’intérêt</h2><ul class="inline"><li><span class="f" data-path="interests.0" data-ph="Centre d’intérêt">Recherche et documentation</span></li><li><span class="f" data-path="interests.1" data-ph="Centre d’intérêt">Lecture</span></li><li><span class="f" data-path="interests.2" data-ph="Centre d’intérêt">Voyage</span></li><li><span class="f" data-path="interests.3" data-ph="Centre d’intérêt">Sports</span></li></ul></section><section class="sec" id="references"><h2>Références</h2><div class="ref"><div class="row"><span class="f lead" data-path="references.0.name" data-ph="Nom">M. Seydou KATIKON</span></div><span class="f" data-path="references.0.org" data-ph="Organisation">Directeur de RobotsMali, Bamako</span><div><a class="f" href="mailto:skatikon@robotsmali.org">skatikon@robotsmali.org</a></div></div><div class="ref"><div class="row"><span class="f lead" data-path="references.1.name" data-ph="Nom">M. Michael LEVENTHAL</span></div><span class="f" data-path="references.1.org" data-ph="Organisation">Investigateur principal de RobotsMali, Bamako</span><div><a class="f" href="mailto:mleventhal@robotsmali.org">mleventhal@robotsmali.org</a></div></div><div class="ref"><div class="row"><span class="f lead" data-path="references.2.name" data-ph="Nom">Dr Yacouba TRAORÉ</span></div><span class="f" data-path="references.2.org" data-ph="Organisation">Enseignant-chercheur à l'ISA</span><div><a class="f" href="mailto:tryacouba@gmail.com">tryacouba@gmail.com</a></div></div><div class="ref"><div class="row"><span class="f lead" data-path="references.3.name" data-ph="Nom">Pr Abdoulaye Salim CISSÉ</span></div><span class="f" data-path="references.3.org" data-ph="Organisation">Professeur à la retraite</span><div><a class="f" href="mailto:abscisse@mesrs.ml">abscisse@mesrs.ml</a></div></div><p class="f ref-note" data-path="referencesNote" data-ph="Note (ex. coordonnées sur demande)" hidden=""></p></section></aside></div><div class="annex"><section class="sec" id="collaborations"><h2>Collaborations institutionnelles</h2><ul class="plain twocol"><li><div class="row"><span class="f lead" data-path="collaborations.0.org" data-ph="Institution">Ministère de l'Enseignement supérieur et de la Recherche scientifique</span></div><p class="f meta" data-path="collaborations.0.text" data-ph="Nature de la collaboration">Formation des formateurs STEM &amp; Robotique.</p></li><li><div class="row"><span class="f lead" data-path="collaborations.1.org" data-ph="Institution">DNENF-LN</span></div><p class="f meta" data-path="collaborations.1.text" data-ph="Nature de la collaboration">Travaux sur les langues nationales et l'enseignement non formel.</p></li><li><div class="row"><span class="f lead" data-path="collaborations.2.org" data-ph="Institution">Orabank</span></div><p class="f meta" data-path="collaborations.2.text" data-ph="Nature de la collaboration">Formation IA pratique pour les banques.</p></li><li><div class="row"><span class="f lead" data-path="collaborations.3.org" data-ph="Institution">ANICT</span></div><p class="f meta" data-path="collaborations.3.text" data-ph="Nature de la collaboration">Formation IA pratique pour les professionnels.</p></li></ul></section><section class="sec" id="projets"><h2>Projets et réalisations</h2><div class="proj"><div><div class="row"><h3 class="f" data-path="projects.0.name" data-ph="Nom du projet">Bayelemabaga</h3></div><p class="f" data-path="projects.0.text" data-ph="Description et résultat">Corpus parallèle français–bambara pour la traduction automatique des langues maliennes : contrôle qualité et documentation.</p></div><div><div class="row"><h3 class="f" data-path="projects.1.name" data-ph="Nom du projet">Jeli-ASR</h3></div><p class="f" data-path="projects.1.text" data-ph="Description et résultat">Contribution à un projet de reconnaissance automatique de la parole en bambara.</p></div><div><div class="row"><h3 class="f" data-path="projects.2.name" data-ph="Nom du projet">Camps STEM et robotique</h3></div><p class="f" data-path="projects.2.text" data-ph="Description et résultat">Initiation des jeunes à la conception, la programmation et la construction de robots, pour développer résolution de problèmes, pensée critique et travail en équipe.</p></div><div><div class="row"><h3 class="f" data-path="projects.3.name" data-ph="Nom du projet">Programmes d'études en robotique et informatique</h3></div><p class="f" data-path="projects.3.text" data-ph="Description et résultat">Conception de curricula pour les établissements scolaires et mise en place de comités scientifiques.</p></div><div><div class="row"><h3 class="f" data-path="projects.4.name" data-ph="Nom du projet">AKAD Innov Center</h3></div><p class="f" data-path="projects.4.text" data-ph="Description et résultat">École de formation et d'orientation.</p></div></div></section><section class="sec" id="conferences"><h2>Conférences et interventions</h2><ul class="plain dist"><li class="cert"><span class="f lead" data-path="talks.0.name" data-ph="Titre de l’intervention">Intelligence artificielle : un accélérateur de la croissance économique ?</span> <span class="meta"><span class="f" data-path="talks.0.event" data-ph="Événement, lieu">ISPRIC Hard Week</span><span class="f" data-path="talks.0.date" data-ph="Date">02/2026</span></span></li><li class="cert"><span class="f lead" data-path="talks.1.name" data-ph="Titre de l’intervention">Développement professionnel des enseignants, qualité et pertinence de l'éducation en Afrique subsaharienne à l'ère de l'intelligence artificielle : défis et perspectives pour la recherche en éducation</span> <span class="meta"><span class="f" data-path="talks.1.event" data-ph="Événement, lieu">4e Symposium KIX Afrique (KIX Africa 19 Hub et KIX Africa 21 Hub), Pointe Sarène, Sénégal</span><span class="f" data-path="talks.1.date" data-ph="Date">3–5 décembre 2025</span></span></li><li class="cert"><span class="f lead" data-path="talks.2.name" data-ph="Titre de l’intervention">Stimuler l'apprentissage par l'IA</span> <span class="meta"><span class="f" data-path="talks.2.event" data-ph="Événement, lieu">Journée Ecobank</span><span class="f" data-path="talks.2.date" data-ph="Date">2024</span></span></li><li class="cert"><span class="f lead" data-path="talks.3.name" data-ph="Titre de l’intervention">L'IA en classe : qu'est-ce que cela signifie pour nos enfants ?</span> <span class="meta"><span class="f" data-path="talks.3.event" data-ph="Événement, lieu">Webinaire</span><span class="f" data-path="talks.3.date" data-ph="Date" hidden=""></span></span></li></ul></section><section class="sec" id="certifications"><h2>Certifications et formations complémentaires</h2><div class="cert-groups"><div class="cert-group"><div class="row"><h3 class="f cert-g" data-path="certifications.0.group" data-ph="Catégorie">Robotique et STEM</h3></div><ul class="plain"><li class="cert"><span class="f lead" data-path="certifications.0.items.0.name" data-ph="Intitulé">VEX V5 Certification (21 h)</span> <span class="meta"><span class="f" data-path="certifications.0.items.0.issuer" data-ph="Organisme">VEX Robotics</span><span class="f" data-path="certifications.0.items.0.date" data-ph="Date">08/2025</span></span></li><li class="cert"><span class="f lead" data-path="certifications.0.items.1.name" data-ph="Intitulé">VEX IQ Certification (16 h)</span> <span class="meta"><span class="f" data-path="certifications.0.items.1.issuer" data-ph="Organisme">VEX Robotics</span><span class="f" data-path="certifications.0.items.1.date" data-ph="Date">08/2025</span></span></li><li class="cert"><span class="f lead" data-path="certifications.0.items.2.name" data-ph="Intitulé">VEX AIM Introductory Educator Certification (4 h)</span> <span class="meta"><span class="f" data-path="certifications.0.items.2.issuer" data-ph="Organisme">VEX Robotics</span><span class="f" data-path="certifications.0.items.2.date" data-ph="Date">08/2025</span></span></li><li class="cert"><span class="f lead" data-path="certifications.0.items.3.name" data-ph="Intitulé">Formateur des formateurs STEM et robotique, certificat STEM et robotique, coach robotique</span> <span class="meta"><span class="f" data-path="certifications.0.items.3.issuer" data-ph="Organisme">RobotsMali</span><span class="f" data-path="certifications.0.items.3.date" data-ph="Date" hidden=""></span></span></li></ul></div><div class="cert-group"><div class="row"><h3 class="f cert-g" data-path="certifications.1.group" data-ph="Catégorie">Réseaux (Cisco Networking Academy)</h3></div><ul class="plain"><li class="cert"><span class="f lead" data-path="certifications.1.items.0.name" data-ph="Intitulé">Network Technician Career Path Exam</span> <span class="meta"><span class="f" data-path="certifications.1.items.0.issuer" data-ph="Organisme">Cisco Networking Academy, RSI</span><span class="f" data-path="certifications.1.items.0.date" data-ph="Date">02/2026</span></span></li><li class="cert"><span class="f lead" data-path="certifications.1.items.1.name" data-ph="Intitulé">Instructeur CCNAv7 : Mise en réseau, sécurité et automatisation des entreprises (CCNA 3)</span> <span class="meta"><span class="f" data-path="certifications.1.items.1.issuer" data-ph="Organisme">UNITeS Academy</span><span class="f" data-path="certifications.1.items.1.date" data-ph="Date">01/2024</span></span></li><li class="cert"><span class="f lead" data-path="certifications.1.items.2.name" data-ph="Intitulé">Instructeur CCNAv7 : Commutation, routage et sans fil (CCNA 2)</span> <span class="meta"><span class="f" data-path="certifications.1.items.2.issuer" data-ph="Organisme">UNITeS Academy</span><span class="f" data-path="certifications.1.items.2.date" data-ph="Date">12/2023</span></span></li><li class="cert"><span class="f lead" data-path="certifications.1.items.3.name" data-ph="Intitulé">Instructeur CCNAv7 : Introduction aux réseaux (CCNA 1)</span> <span class="meta"><span class="f" data-path="certifications.1.items.3.issuer" data-ph="Organisme">UNITeS Academy</span><span class="f" data-path="certifications.1.items.3.date" data-ph="Date">11/2023</span></span></li></ul></div><div class="cert-group"><div class="row"><h3 class="f cert-g" data-path="certifications.2.group" data-ph="Catégorie">Intelligence artificielle et numérique</h3></div><ul class="plain"><li class="cert"><span class="f lead" data-path="certifications.2.items.0.name" data-ph="Intitulé">Claude AI: Think Smarter, Work Faster</span> <span class="meta"><span class="f" data-path="certifications.2.items.0.issuer" data-ph="Organisme">SuccessWise.ai</span><span class="f" data-path="certifications.2.items.0.date" data-ph="Date">10/2026</span></span><a class="verify" href="https://successwise.ai/certificate/SW-2026-H2X523" target="_blank" rel="noopener">Vérifier</a></li><li class="cert"><span class="f lead" data-path="certifications.2.items.1.name" data-ph="Intitulé">Artificial Intelligence Certification for Educators, niveau 1</span> <span class="meta"><span class="f" data-path="certifications.2.items.1.issuer" data-ph="Organisme">Teachy</span><span class="f" data-path="certifications.2.items.1.date" data-ph="Date">05/2025</span></span></li><li class="cert"><span class="f lead" data-path="certifications.2.items.2.name" data-ph="Intitulé">Traitement automatique du langage naturel (mention Assez bien)</span> <span class="meta"><span class="f" data-path="certifications.2.items.2.issuer" data-ph="Organisme">RobotsMali, Ministère de l'Enseignement supérieur, UNESCO, ITMA</span><span class="f" data-path="certifications.2.items.2.date" data-ph="Date">2019</span></span></li><li class="cert"><span class="f lead" data-path="certifications.2.items.3.name" data-ph="Intitulé">Création de sites web avec WordPress</span> <span class="meta"><span class="f" data-path="certifications.2.items.3.issuer" data-ph="Organisme">Next Einstein Forum, Semaine africaine des sciences</span><span class="f" data-path="certifications.2.items.3.date" data-ph="Date" hidden=""></span></span></li></ul></div><div class="cert-group"><div class="row"><h3 class="f cert-g" data-path="certifications.3.group" data-ph="Catégorie">Gestion et leadership</h3></div><ul class="plain"><li class="cert"><span class="f lead" data-path="certifications.3.items.0.name" data-ph="Intitulé">Introduction to Program Management</span> <span class="meta"><span class="f" data-path="certifications.3.items.0.issuer" data-ph="Organisme">IBM, Coursera</span><span class="f" data-path="certifications.3.items.0.date" data-ph="Date">04/2026</span></span><a class="verify" href="https://coursera.org/verify/EII6KR65BOU5" target="_blank" rel="noopener">Vérifier</a></li><li class="cert"><span class="f lead" data-path="certifications.3.items.1.name" data-ph="Intitulé">Gestion de communauté</span> <span class="meta"><span class="f" data-path="certifications.3.items.1.issuer" data-ph="Organisme" hidden=""></span><span class="f" data-path="certifications.3.items.1.date" data-ph="Date" hidden=""></span></span></li><li class="cert"><span class="f lead" data-path="certifications.3.items.2.name" data-ph="Intitulé">CampLeadership : entrepreneuriat, négociation, planification de projet, prise de parole</span> <span class="meta"><span class="f" data-path="certifications.3.items.2.issuer" data-ph="Organisme">Club UNESCO de l'ENI-ABT</span><span class="f" data-path="certifications.3.items.2.date" data-ph="Date">2016</span></span></li></ul></div></div></section><section class="sec" id="distinctions"><h2>Distinctions et reconnaissances</h2><ul class="plain dist twocol"><li class="cert"><span class="f lead" data-path="distinctions.0.name" data-ph="Distinction">Reconnaissance du Président de la République en STEM et robotique</span> <span class="meta"><span class="f" data-path="distinctions.0.issuer" data-ph="Organisme">Présidence de la République du Mali</span><span class="f" data-path="distinctions.0.date" data-ph="Date" hidden=""></span></span></li><li class="cert"><span class="f lead" data-path="distinctions.1.name" data-ph="Distinction">Learner Achievement Award, Learn-A-Thon 2025</span> <span class="meta"><span class="f" data-path="distinctions.1.issuer" data-ph="Organisme">Cisco Networking Academy</span><span class="f" data-path="distinctions.1.date" data-ph="Date">01/2025</span></span></li><li class="cert"><span class="f lead" data-path="distinctions.2.name" data-ph="Distinction">Personne ressource, Semaine de l'intelligence artificielle 2022</span> <span class="meta"><span class="f" data-path="distinctions.2.issuer" data-ph="Organisme">RobotsMali, Deep Learning Indaba</span><span class="f" data-path="distinctions.2.date" data-ph="Date">12/2022</span></span></li><li class="cert"><span class="f lead" data-path="distinctions.3.name" data-ph="Distinction">Reconnaissance coach, Pan-African Robotics Competition (PARC 2019)</span> <span class="meta"><span class="f" data-path="distinctions.3.issuer" data-ph="Organisme">PARC</span><span class="f" data-path="distinctions.3.date" data-ph="Date">07/2019</span></span></li><li class="cert"><span class="f lead" data-path="distinctions.4.name" data-ph="Distinction">Attestation de contribution, Camp STEM et robotique 2019</span> <span class="meta"><span class="f" data-path="distinctions.4.issuer" data-ph="Organisme">RobotsMali, ENETP</span><span class="f" data-path="distinctions.4.date" data-ph="Date">08/2019</span></span></li></ul></section></div><footer class="foot"><span>Alou DEMBELE, curriculum vitae</span><span>Dernière mise à jour : 14 octobre 2026</span></footer></div>
+<div class="status" id="status" aria-live="polite"></div>
+
+<div class="toolbar" role="toolbar" aria-label="Actions sur le CV">
+  <button type="button" class="primary view-only" data-act="print">Télécharger en PDF</button>
+  <button type="button" class="view-only" data-act="ats" aria-pressed="false">Version ATS</button>
+  <button type="button" class="only-local" data-act="signed" aria-pressed="false">Version signée</button>
+  <button type="button" class="only-local" data-act="edit">Modifier</button>
+  <span class="edit-only">
+    <button type="button" class="primary" data-act="save">Enregistrer le fichier HTML</button>
+    <button type="button" data-act="json">Exporter les données</button>
+    <button type="button" data-act="import">Importer des données</button>
+    <button type="button" data-act="done">Terminer</button>
+  </span>
+</div>
+<input type="file" id="photoInput" accept="image/*" hidden="">
+<input type="file" id="importInput" accept="application/json,.json" hidden="">
+<input type="file" id="sigInput" accept="image/*" hidden="">
+
+<!-- ============================================================
+     DONNÉES DU CV
+     Pour une mise à jour simple : ouvrez ce fichier dans un navigateur,
+     cliquez sur « Modifier » (ou ajoutez #modifier à l'adresse),
+     puis « Enregistrer le fichier HTML ».
+     Vous pouvez aussi modifier directement le texte ci-dessous.
+     ============================================================ -->
+<script type="application/json" id="cv-data">
+{
+  "meta": {
+    "updated": "2026-10-14"
+  },
+  "identity": {
+    "name": "Alou DEMBELE",
+    "title": "Ingénieur en technologies mobiles et enseignant",
+    "subtitle": "",
+    "photo": "",
+    "location": "Bamako, Mali",
+    "phone": "+223 70 88 72 50",
+    "email": "aloudembele14@gmail.com",
+    "linkedin": "linkedin.com/in/aloukoniba-dembele220a5317a",
+    "nationality": "Nationalité malienne"
+  },
+  "profile": "Ingénieur en technologies mobiles et spécialiste de la formation en STEM, robotique et numérique éducatif, je conçois et pilote depuis 2018 des programmes de formation innovants destinés aux élèves, aux enseignants et aux étudiants. Certifié formateur de formateurs VEX Robotics et instructeur Cisco CCNA, je combine expertise technique, ingénierie pédagogique et accompagnement de talents pour développer les compétences numériques et scientifiques. Mon parcours est marqué par le pilotage d’un projet de collecte de données vocales bambara–français en partenariat avec Google et l’encadrement d’équipes de robotique jusqu’au Championnat du monde VEX. J’œuvre à la croisée de l’éducation, de l’innovation technologique et de la valorisation des langues nationales, avec une ambition : faire du numérique un levier de développement des compétences et de transformation éducative.",
+  "skills": [
+    {
+      "group": "Pédagogie et formation",
+      "items": [
+        "Conception et mise en œuvre de programmes de formation",
+        "Formation de formateurs et encadrement d'équipes",
+        "Approche par compétences et évaluation critériée",
+        "Conception de supports et d'outils pédagogiques",
+        "Dispositifs hybrides et numérique éducatif"
+      ]
+    },
+    {
+      "group": "Technique",
+      "items": [
+        "Réseaux LAN/WAN : routage, commutation, VLAN, OSPF",
+        "Sécurité réseau : ACL, NAT, bonnes pratiques",
+        "Technologies mobiles et IoT",
+        "Robotique : VEX IQ, VEX V5, VEX AIM, Arduino",
+        "Intelligence artificielle et traitement automatique du langage"
+      ]
+    },
+    {
+      "group": "Gestion de projet et données",
+      "items": [
+        "Cahier des charges, planning, ressources, livrables",
+        "Coordination multi-acteurs et prestataires",
+        "Collecte, annotation et contrôle qualité de données",
+        "Documentation technique et rapports"
+      ]
+    },
+    {
+      "group": "Savoir-être",
+      "items": [
+        "Leadership et travail en équipe",
+        "Communication et prise de parole en public",
+        "Rigueur, respect, ponctualité"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Français",
+      "level": "Courant, langue de travail",
+      "score": 5
+    },
+    {
+      "name": "Bambara",
+      "level": "Langue maternelle",
+      "score": 5
+    },
+    {
+      "name": "Anglais",
+      "level": "Opérationnel",
+      "score": 3
+    },
+    {
+      "name": "Arabe",
+      "level": "Notions",
+      "score": 1
+    }
+  ],
+  "tools": [
+    {
+      "group": "Collaboration",
+      "items": [
+        "Google Workspace",
+        "Microsoft OneDrive",
+        "Zoom",
+        "Google Meet",
+        "Slack",
+        "Trello"
+      ]
+    },
+    {
+      "group": "Création",
+      "items": [
+        "Canva",
+        "Adobe",
+        "Tinkercad",
+        "WordPress"
+      ]
+    },
+    {
+      "group": "Programmation",
+      "items": [
+        "Python",
+        "Java",
+        "C++",
+        "HTML/CSS/JavaScript"
+      ]
+    }
+  ],
+  "interests": [
+    "Recherche et documentation",
+    "Lecture",
+    "Voyage",
+    "Sports"
+  ],
+  "references": [
+    {
+      "name": "M. Seydou KATIKON",
+      "org": "Directeur de RobotsMali, Bamako",
+      "contact": "skatikon@robotsmali.org"
+    },
+    {
+      "name": "M. Michael LEVENTHAL",
+      "org": "Investigateur principal de RobotsMali, Bamako",
+      "contact": "mleventhal@robotsmali.org"
+    },
+    {
+      "name": "Dr Yacouba TRAORÉ",
+      "org": "Enseignant-chercheur à l'ISA",
+      "contact": "tryacouba@gmail.com"
+    },
+    {
+      "name": "Pr Abdoulaye Salim CISSÉ",
+      "org": "Professeur à la retraite",
+      "contact": "abscisse@mesrs.ml"
+    }
+  ],
+  "referencesNote": "",
+  "attestation": {
+    "text": "Je soussigné, Alou DEMBELE, certifie sur l'honneur que les informations figurant dans ce curriculum vitae sont exactes et décrivent fidèlement mes qualifications, mon expérience et ma situation.",
+    "place": "Bamako",
+    "date": "",
+    "signature": ""
+  },
+  "experience": [
+    {
+      "group": "Formation et ingénierie pédagogique",
+      "items": [
+        {
+          "role": "Responsable de la formation, enseignement supérieur et professionnel",
+          "org": "RobotsMali AI4D Lab",
+          "place": "Bamako",
+          "period": "2024 – aujourd'hui",
+          "bullets": [
+            "Élaboration du programme IA pratique."
+          ]
+        },
+        {
+          "role": "Formateur STEM et robotique, formateur de formateurs",
+          "org": "RobotsMali",
+          "place": "Bamako",
+          "period": "08/2018 – aujourd'hui",
+          "bullets": [
+            "Conception de programmes et de modules de formation en STEM, robotique et informatique ; production des supports pédagogiques associés.",
+            "Organisateur et formateur des formateurs du programme de formation des formateurs STEM & Robotique, mené en 2020 avec le Ministère de l'Enseignement supérieur et de la Recherche scientifique, sous la supervision de l'ENETP.",
+            "Organisation et formation des formateurs du camp STEM & Robotique depuis 2019.",
+            "Animation de comités scientifiques dans les écoles.",
+            "Conception du programme de formation en robotique du Prytanée militaire de Kati.",
+            "Participation à l'atelier de révision des programmes du CIAR-Mali (octobre 2026)."
+          ]
+        },
+        {
+          "role": "Coach d'équipes de robotique",
+          "org": "RobotsMali",
+          "place": "Bamako",
+          "period": "03/2021 – aujourd'hui",
+          "bullets": [
+            "Encadrement d'équipes en compétitions internationales : PARC 2022 à Dakar et Championnat du monde VEX 2023 au Texas (États-Unis).",
+            "Coordination de projets interdisciplinaires associant mécanique, électronique et programmation.",
+            "Rédaction de rapports techniques sur les spécifications et les performances des robots."
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Enseignement",
+      "items": [
+        {
+          "role": "Enseignant de sciences",
+          "org": "Enko Bamako, Programme d'éducation intermédiaire (PEI) du Baccalauréat International",
+          "place": "Bamako",
+          "period": "",
+          "bullets": [
+            "Enseignement des sciences dans un curriculum fondé sur les compétences.",
+            "Évaluation des élèves par critères et descripteurs de niveaux, avec une rétroaction formative régulière."
+          ]
+        },
+        {
+          "role": "Assistant enseignant-chercheur",
+          "org": "IAM",
+          "place": "Bamako",
+          "period": "06/2024 – aujourd'hui",
+          "bullets": [
+            "Enseignement de la sécurité des réseaux WAN/LAN, des tests d'interfaces et de l'optimisation des performances.",
+            "Animation d'ateliers de renforcement des compétences transversales."
+          ]
+        },
+        {
+          "role": "Assistant enseignant-chercheur",
+          "org": "ESTM",
+          "place": "Bamako",
+          "period": "11/2021 – aujourd'hui",
+          "bullets": [
+            "Élaboration et mise à jour de programmes d'études.",
+            "Enseignement de la programmation, de l'administration réseau, de la téléphonie d'entreprise et de la gestion de projet numérique.",
+            "Conception d'évaluations numériques interactives (examens et quiz en ligne).",
+            "Suivi et évaluation des projets de recherche des étudiants ; animation d'ateliers de compétences transversales."
+          ]
+        },
+        {
+          "role": "Assistant enseignant-chercheur",
+          "org": "Université Mary Saint Claire",
+          "place": "Bamako",
+          "period": "03/2023 – 06/2023",
+          "bullets": [
+            "Enseignement des réseaux d'entreprise et de la téléphonie d'entreprise."
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Gestion de projets et données",
+      "items": [
+        {
+          "role": "Chef de projet, données vocales en bambara",
+          "org": "RobotsMali, en partenariat avec Google",
+          "place": "Bamako",
+          "period": "03/2022 – 11/2022",
+          "bullets": [
+            "Pilotage de la collecte, de la transcription et de la traduction de données vocales bambara–français destinées à un modèle de traduction automatique.",
+            "Rédaction du cahier des charges ; définition de la méthodologie, du planning, des ressources et des livrables.",
+            "Coordination des équipes internes, des intervenants externes et des prestataires ; animation des réunions de suivi."
+          ]
+        },
+        {
+          "role": "Analyste de données, projet Bayelemabaga",
+          "org": "RobotsMali",
+          "place": "Bamako",
+          "period": "11/2021 – 11/2022",
+          "bullets": [
+            "Contrôle de la qualité et de la fiabilité du corpus textuel français–bambara destiné à la traduction automatique.",
+            "Rédaction de la documentation technique et formation des utilisateurs aux bonnes pratiques."
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Recherche et engagement scientifique",
+      "items": [
+        {
+          "role": "Recherche sur les langues et l'intelligence artificielle pour l'éducation",
+          "org": "",
+          "place": "",
+          "period": "2024 – aujourd'hui",
+          "bullets": [
+            "Rédaction d'un article sur Claude et les treize langues nationales du Mali.",
+            "Contribution au projet GAIFE de RobotsMali."
+          ]
+        },
+        {
+          "role": "Membre de la cohorte d'ambassadeurs",
+          "org": "Next Einstein Forum, African Institute for Mathematical Sciences (AIMS)",
+          "place": "",
+          "period": "01/2023 – aujourd'hui",
+          "bullets": [
+            "Promotion des sciences auprès des jeunes, notamment lors de la Semaine africaine des sciences au Mali."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master d'ingénierie, Technologies mobiles",
+      "org": "École Nationale d'Ingénieurs Abderhamane Baba Touré (ENI-ABT), Bamako",
+      "period": "2018 – 2021",
+      "note": "Génie informatique et télécommunications, mention Bien",
+      "bullets": [
+        "Applications mobiles, architectures de réseaux sans fil, IoT, analyse de données, sécurité et cryptographie."
+      ]
+    },
+    {
+      "degree": "Licence, Informatique et télécommunications",
+      "org": "École Nationale d'Ingénieurs Abderhamane Baba Touré (ENI-ABT), Bamako",
+      "period": "2014 – 2018",
+      "note": "",
+      "bullets": [
+        "Réseaux LAN/WAN et mobiles, bases de données, VoIP, programmation et développement logiciel."
+      ]
+    },
+    {
+      "degree": "DUT, Mathématiques, physique et chimie",
+      "org": "Institut de Formation des Maîtres (IFM), Bamako",
+      "period": "2015 – 2017",
+      "note": "",
+      "bullets": [
+        "Pédagogie et gestion de classe, évaluation et suivi des progrès des élèves."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Bayelemabaga",
+      "text": "Corpus parallèle français–bambara pour la traduction automatique des langues maliennes : contrôle qualité et documentation."
+    },
+    {
+      "name": "Jeli-ASR",
+      "text": "Contribution à un projet de reconnaissance automatique de la parole en bambara."
+    },
+    {
+      "name": "Camps STEM et robotique",
+      "text": "Initiation des jeunes à la conception, la programmation et la construction de robots, pour développer résolution de problèmes, pensée critique et travail en équipe."
+    },
+    {
+      "name": "Programmes d'études en robotique et informatique",
+      "text": "Conception de curricula pour les établissements scolaires et mise en place de comités scientifiques."
+    },
+    {
+      "name": "AKAD Innov Center",
+      "text": "École de formation et d'orientation."
+    }
+  ],
+  "collaborations": [
+    {
+      "org": "Ministère de l'Enseignement supérieur et de la Recherche scientifique",
+      "text": "Formation des formateurs STEM & Robotique."
+    },
+    {
+      "org": "DNENF-LN",
+      "text": "Travaux sur les langues nationales et l'enseignement non formel."
+    },
+    {
+      "org": "Orabank",
+      "text": "Formation IA pratique pour les banques."
+    },
+    {
+      "org": "ANICT",
+      "text": "Formation IA pratique pour les professionnels."
+    }
+  ],
+  "talks": [
+    {
+      "name": "Intelligence artificielle : un accélérateur de la croissance économique ?",
+      "event": "ISPRIC Hard Week",
+      "date": "02/2026"
+    },
+    {
+      "name": "Développement professionnel des enseignants, qualité et pertinence de l'éducation en Afrique subsaharienne à l'ère de l'intelligence artificielle : défis et perspectives pour la recherche en éducation",
+      "event": "4e Symposium KIX Afrique (KIX Africa 19 Hub et KIX Africa 21 Hub), Pointe Sarène, Sénégal",
+      "date": "3–5 décembre 2025"
+    },
+    {
+      "name": "Stimuler l'apprentissage par l'IA",
+      "event": "Journée Ecobank",
+      "date": "2024"
+    },
+    {
+      "name": "L'IA en classe : qu'est-ce que cela signifie pour nos enfants ?",
+      "event": "Webinaire",
+      "date": ""
+    }
+  ],
+  "certifications": [
+    {
+      "group": "Robotique et STEM",
+      "items": [
+        {
+          "name": "VEX V5 Certification (21 h)",
+          "issuer": "VEX Robotics",
+          "date": "08/2025",
+          "url": ""
+        },
+        {
+          "name": "VEX IQ Certification (16 h)",
+          "issuer": "VEX Robotics",
+          "date": "08/2025",
+          "url": ""
+        },
+        {
+          "name": "VEX AIM Introductory Educator Certification (4 h)",
+          "issuer": "VEX Robotics",
+          "date": "08/2025",
+          "url": ""
+        },
+        {
+          "name": "Formateur des formateurs STEM et robotique, certificat STEM et robotique, coach robotique",
+          "issuer": "RobotsMali",
+          "date": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "group": "Réseaux (Cisco Networking Academy)",
+      "items": [
+        {
+          "name": "Network Technician Career Path Exam",
+          "issuer": "Cisco Networking Academy, RSI",
+          "date": "02/2026",
+          "url": ""
+        },
+        {
+          "name": "Instructeur CCNAv7 : Mise en réseau, sécurité et automatisation des entreprises (CCNA 3)",
+          "issuer": "UNITeS Academy",
+          "date": "01/2024",
+          "url": ""
+        },
+        {
+          "name": "Instructeur CCNAv7 : Commutation, routage et sans fil (CCNA 2)",
+          "issuer": "UNITeS Academy",
+          "date": "12/2023",
+          "url": ""
+        },
+        {
+          "name": "Instructeur CCNAv7 : Introduction aux réseaux (CCNA 1)",
+          "issuer": "UNITeS Academy",
+          "date": "11/2023",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "group": "Intelligence artificielle et numérique",
+      "items": [
+        {
+          "name": "Claude AI: Think Smarter, Work Faster",
+          "issuer": "SuccessWise.ai",
+          "date": "10/2026",
+          "url": "successwise.ai/certificate/SW-2026-H2X523"
+        },
+        {
+          "name": "Artificial Intelligence Certification for Educators, niveau 1",
+          "issuer": "Teachy",
+          "date": "05/2025",
+          "url": ""
+        },
+        {
+          "name": "Traitement automatique du langage naturel (mention Assez bien)",
+          "issuer": "RobotsMali, Ministère de l'Enseignement supérieur, UNESCO, ITMA",
+          "date": "2019",
+          "url": ""
+        },
+        {
+          "name": "Création de sites web avec WordPress",
+          "issuer": "Next Einstein Forum, Semaine africaine des sciences",
+          "date": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "group": "Gestion et leadership",
+      "items": [
+        {
+          "name": "Introduction to Program Management",
+          "issuer": "IBM, Coursera",
+          "date": "04/2026",
+          "url": "coursera.org/verify/EII6KR65BOU5"
+        },
+        {
+          "name": "Gestion de communauté",
+          "issuer": "",
+          "date": "",
+          "url": ""
+        },
+        {
+          "name": "CampLeadership : entrepreneuriat, négociation, planification de projet, prise de parole",
+          "issuer": "Club UNESCO de l'ENI-ABT",
+          "date": "2016",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "distinctions": [
+    {
+      "name": "Reconnaissance du Président de la République en STEM et robotique",
+      "issuer": "Présidence de la République du Mali",
+      "date": ""
+    },
+    {
+      "name": "Learner Achievement Award, Learn-A-Thon 2025",
+      "issuer": "Cisco Networking Academy",
+      "date": "01/2025"
+    },
+    {
+      "name": "Personne ressource, Semaine de l'intelligence artificielle 2022",
+      "issuer": "RobotsMali, Deep Learning Indaba",
+      "date": "12/2022"
+    },
+    {
+      "name": "Reconnaissance coach, Pan-African Robotics Competition (PARC 2019)",
+      "issuer": "PARC",
+      "date": "07/2019"
+    },
+    {
+      "name": "Attestation de contribution, Camp STEM et robotique 2019",
+      "issuer": "RobotsMali, ENETP",
+      "date": "08/2019"
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var dataEl = document.getElementById('cv-data');
+  var D = JSON.parse(dataEl.textContent);
+  var FILE_JSON = JSON.stringify(D);
+  var editing = false, dirty = false;
+  var KEY = 'cv-brouillon-' + location.pathname;
+
+  var SHAPES = {
+    'experience': {group:'',items:[{role:'',org:'',place:'',period:'',bullets:['']}]},
+    'experience.#.items': {role:'',org:'',place:'',period:'',bullets:['']},
+    'skills': {group:'',items:['']},
+    'languages': {name:'',level:'',score:3},
+    'tools': {group:'',items:['']},
+    'references': {name:'',org:'',contact:''},
+    'projects': {name:'',text:''},
+    'collaborations': {org:'',text:''},
+    'education': {degree:'',org:'',period:'',note:'',bullets:['']},
+    'certifications': {group:'',items:[{name:'',issuer:'',date:'',url:''}]},
+    'certifications.#.items': {name:'',issuer:'',date:'',url:''},
+    'distinctions': {name:'',issuer:'',date:''},
+    'talks': {name:'',event:'',date:''}
+  };
+
+  var ICONS = {
+    pin:'<svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
+    phone:'<svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>',
+    mail:'<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
+    link:'<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>',
+    flag:'<svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>'
+  };
+  var MOTIF = '<svg viewBox="0 0 118 400" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><defs><pattern id="bogolan" width="40" height="44" patternUnits="userSpaceOnUse"><path d="M0 12 L10 2 L20 12 L30 2 L40 12" fill="none" stroke="#3D9BF2" stroke-width="2.2"/><rect x="15.5" y="22.5" width="9" height="9" transform="rotate(45 20 27)" fill="none" stroke="#CFE6FF" stroke-width="1.6"/><circle cx="20" cy="27" r="1.6" fill="#3D9BF2"/><circle cx="4" cy="36" r="1.7" fill="#CFE6FF"/><circle cx="36" cy="36" r="1.7" fill="#CFE6FF"/></pattern></defs><rect width="118" height="400" fill="url(#bogolan)" opacity=".5"/><rect width="3" height="400" fill="#3D9BF2"/></svg>';
+
+  /* ---------- utilitaires ---------- */
+  function P(s){ return s.split('.').map(function(k){ return /^\d+$/.test(k) ? +k : k; }); }
+  function get(p){ return P(p).reduce(function(o,k){ return o == null ? undefined : o[k]; }, D); }
+  function set(p,v){ var a=P(p), o=D; for(var i=0;i<a.length-1;i++) o=o[a[i]]; o[a[a.length-1]]=v; }
+  function blank(x){ return JSON.parse(JSON.stringify(x)); }
+  function has(v){ return v != null && String(v).trim() !== ''; }
+  function h(tag, attrs){
+    var e = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function(k){
+      var v = attrs[k]; if (v == null || v === false) return;
+      if (k === 'class') e.className = v; else if (k === 'html') e.innerHTML = v; else e.setAttribute(k, v === true ? '' : v);
+    });
+    for (var i=2;i<arguments.length;i++) append(e, arguments[i]);
+    return e;
+  }
+  function append(e,c){ if (c == null || c === false) return; if (Array.isArray(c)) { c.forEach(function(x){ append(e,x); }); return; } e.append(c.nodeType ? c : document.createTextNode(c)); }
+
+  // Champ texte modifiable
+  function f(path, tag, cls, ph, multiline){
+    var v = get(path); v = v == null ? '' : v;
+    var e = h(tag || 'span', {class: 'f' + (cls ? ' ' + cls : ''), 'data-path': path, 'data-ph': ph || ''});
+    e.textContent = v;
+    if (editing) { e.contentEditable = 'true'; e.spellcheck = true; if (multiline) e.setAttribute('data-ml','1'); }
+    else if (!has(v)) e.hidden = true;
+    return e;
+  }
+  // Champ lien (texte modifiable en édition, lien cliquable sinon)
+  function lf(path, ph, hrefFn){
+    if (editing) return f(path, 'span', '', ph);
+    var v = String(get(path) || '').trim(); if (!v) return null;
+    var href = hrefFn(v);
+    var a = h('a', {class:'f', href: href, target: /^https?:/.test(href) ? '_blank' : null, rel: /^https?:/.test(href) ? 'noopener' : null});
+    a.textContent = v; return a;
+  }
+  function web(v){ return /^https?:\/\//.test(v) ? v : 'https://' + v; }
+  function cbtn(txt, act, lp, i, label, cls){ return h('button', {type:'button', class:'cb' + (cls ? ' ' + cls : ''), 'data-act':act, 'data-list':lp, 'data-i':i, 'aria-label':label, title:label}, txt); }
+  function ctl(lp, i, n){
+    if (!editing) return null;
+    return h('span', {class:'ctl'}, i > 0 && cbtn('↑','up',lp,i,'Monter'), i < n-1 && cbtn('↓','down',lp,i,'Descendre'), cbtn('×','del',lp,i,'Supprimer','del'));
+  }
+  function addBtn(lp, label){ return editing ? h('button', {type:'button', class:'add', 'data-act':'add', 'data-list':lp}, '+ ' + label) : null; }
+  function filled(o, keys){ return editing || keys.some(function(k){ return has(o[k]); }); }
+
+  function strList(p, ph, addLabel, cls){
+    var arr = get(p) || [], lis = [];
+    arr.forEach(function(s,i){ if (!editing && !has(s)) return; lis.push(h('li', null, f(p+'.'+i, 'span', '', ph), ctl(p,i,arr.length))); });
+    return [lis.length ? h('ul', {class: cls || 'bul'}, lis) : null, addBtn(p, addLabel)];
+  }
+  function sec(id, title){ var s = h('section', {class:'sec', id:id}, h('h2', null, title)); for (var i=2;i<arguments.length;i++) append(s, arguments[i]); return s; }
+
+  /* ---------- rendu ---------- */
+  function initials(){ return (D.identity.name || '').split(/\s+/).filter(Boolean).slice(0,2).map(function(w){ return w[0]; }).join('').toUpperCase(); }
+
+  function header(){
+    var I = D.identity;
+    var showPhoto = editing || has(I.photo);
+    var photo = has(I.photo) ? h('img', {src:I.photo, alt:'Photo de ' + (I.name || ''), class:'photo'}) : h('div', {class:'photo ph', 'aria-hidden':'true'}, initials());
+    var wrap = h('div', {class:'photo-wrap'}, photo, editing && h('div', {class:'photo-act'},
+      h('button', {type:'button', class:'cb wide', 'data-act':'photo'}, has(I.photo) ? 'Changer la photo' : 'Ajouter une photo'),
+      has(I.photo) && h('button', {type:'button', class:'cb wide', 'data-act':'nophoto'}, 'Retirer la photo')));
+    function ci(icon, el){ if (!el || (!editing && el.hidden)) return null; return h('li', null, h('span', {class:'ic', 'aria-hidden':'true', html:ICONS[icon]}), el); }
+    return h('header', {class: showPhoto ? 'hero' : 'hero nophoto'}, showPhoto ? wrap : null,
+      h('div', {class:'id'},
+        f('identity.name','h1','name','Prénom NOM'),
+        f('identity.title','p','title','Titre professionnel'),
+        f('identity.subtitle','p','subtitle','Spécialités'),
+        h('ul', {class:'contacts'},
+          ci('pin', f('identity.location','span','','Ville, pays')),
+          ci('phone', lf('identity.phone','Téléphone', function(v){ return 'tel:' + v.replace(/[^\d+]/g,''); })),
+          ci('mail', lf('identity.email','E-mail', function(v){ return 'mailto:' + v; })),
+          ci('link', lf('identity.linkedin','Profil LinkedIn', web)),
+          ci('flag', f('identity.nationality','span','','Nationalité')))),
+      h('div', {class:'motif', html: MOTIF}));
+  }
+
+  function mainCol(){
+    var m = h('main', null);
+    m.append(sec('profil', 'Profil', f('profile','p','profile','Résumé professionnel en 4 à 6 lignes', true)));
+
+    // Expérience
+    var exp = sec('experience', 'Expérience professionnelle');
+    D.experience.forEach(function(g, gi){
+      var gp = 'experience.' + gi;
+      var items = g.items.filter(function(it){ return filled(it, ['role','org']); });
+      if (!editing && !items.length) return;
+      var grp = h('div', {class:'group'}, h('div', {class:'row'}, f(gp+'.group','h3','gtitle','Catégorie'), ctl('experience', gi, D.experience.length)));
+      g.items.forEach(function(it, ii){
+        if (!filled(it, ['role','org'])) return;
+        var ip = gp + '.items.' + ii;
+        grp.append(h('article', {class:'job'},
+          h('div', {class:'job-head'}, h('div', {class:'row'}, f(ip+'.role','h3','role','Intitulé du poste'), ctl(gp+'.items', ii, g.items.length)), f(ip+'.period','span','period','Période (ex. 03/2021 – aujourd’hui)')),
+          h('p', {class:'meta'}, f(ip+'.org','span','','Organisation'), f(ip+'.place','span','','Lieu')),
+          strList(ip+'.bullets', 'Réalisation (ex. Conception de… ; résultat obtenu)', 'Ajouter un point')));
+      });
+      append(grp, addBtn(gp+'.items', 'Ajouter un poste'));
+      exp.append(grp);
+    });
+    append(exp, addBtn('experience', 'Ajouter une catégorie'));
+    m.append(exp);
+
+    // Formation
+    var edu = sec('formation', 'Formation');
+    D.education.forEach(function(e, i){
+      if (!filled(e, ['degree','org'])) return;
+      var p = 'education.' + i;
+      edu.append(h('article', {class:'job'},
+        h('div', {class:'job-head'}, h('div', {class:'row'}, f(p+'.degree','h3','role','Diplôme'), ctl('education', i, D.education.length)), f(p+'.period','span','period','Période')),
+        h('p', {class:'meta'}, f(p+'.org','span','','Établissement'), f(p+'.note','span','','Spécialité, mention')),
+        strList(p+'.bullets', 'Compétences acquises', 'Ajouter un point')));
+    });
+    append(edu, addBtn('education', 'Ajouter un diplôme'));
+    m.append(edu);
+    return m;
+  }
+
+  function annexCol(){
+    var m = h('div', {class:'annex'});
+    // Collaborations
+    var col = h('ul', {class:'plain twocol'});
+    D.collaborations.forEach(function(x, i){
+      if (!filled(x, ['org','text'])) return;
+      col.append(h('li', null, h('div', {class:'row'}, f('collaborations.'+i+'.org','span','lead','Institution'), ctl('collaborations', i, D.collaborations.length)), f('collaborations.'+i+'.text','p','meta','Nature de la collaboration')));
+    });
+    m.append(sec('collaborations', 'Collaborations institutionnelles', col, addBtn('collaborations', 'Ajouter une collaboration')));
+
+    // Projets
+    var pj = h('div', {class:'proj'});
+    D.projects.forEach(function(x, i){
+      if (!filled(x, ['name','text'])) return;
+      pj.append(h('div', null, h('div', {class:'row'}, f('projects.'+i+'.name','h3','','Nom du projet'), ctl('projects', i, D.projects.length)), f('projects.'+i+'.text','p','','Description et résultat', true)));
+    });
+    m.append(sec('projets', 'Projets et réalisations', pj, addBtn('projects', 'Ajouter un projet')));
+
+    // Conférences
+    var tk = h('ul', {class:'plain dist'});
+    (D.talks || []).forEach(function(x, i){
+      if (!filled(x, ['name'])) return;
+      var p = 'talks.' + i;
+      tk.append(h('li', {class:'cert'}, f(p+'.name','span','lead','Titre de l\u2019intervention'), ' ', h('span', {class:'meta'}, f(p+'.event','span','','Événement, lieu'), f(p+'.date','span','','Date')), ctl('talks', i, D.talks.length)));
+    });
+    if (editing || tk.children.length) m.append(sec('conferences', 'Conférences et interventions', tk, D.talks && addBtn('talks', 'Ajouter une intervention')));
+
+    // Certifications
+    var cs = sec('certifications', 'Certifications et formations complémentaires'), cgs = h('div', {class:'cert-groups'});
+    D.certifications.forEach(function(g, gi){
+      var gp = 'certifications.' + gi;
+      if (!editing && !g.items.some(function(c){ return has(c.name); })) return;
+      var ul = h('ul', {class:'plain'});
+      g.items.forEach(function(c, ci){
+        if (!filled(c, ['name'])) return;
+        var p = gp + '.items.' + ci;
+        var verify = editing ? f(p+'.url','span','url-edit','Lien de vérification (facultatif)')
+          : (has(c.url) ? h('a', {class:'verify', href: web(c.url.trim()), target:'_blank', rel:'noopener'}, 'Vérifier') : null);
+        ul.append(h('li', {class:'cert'},
+          f(p+'.name','span','lead','Intitulé'), ' ',
+          h('span', {class:'meta'}, f(p+'.issuer','span','','Organisme'), f(p+'.date','span','','Date')), verify, ctl(gp+'.items', ci, g.items.length)));
+      });
+      var gd = h('div', {class:'cert-group'});
+      append(gd, [h('div', {class:'row'}, f(gp+'.group','h3','cert-g','Catégorie'), ctl('certifications', gi, D.certifications.length)), ul, addBtn(gp+'.items', 'Ajouter une certification')]);
+      cgs.append(gd);
+    });
+    cs.append(cgs);
+    append(cs, addBtn('certifications', 'Ajouter une catégorie'));
+    m.append(cs);
+
+    // Distinctions
+    var ds = h('ul', {class:'plain dist twocol'});
+    D.distinctions.forEach(function(x, i){
+      if (!filled(x, ['name'])) return;
+      var p = 'distinctions.' + i;
+      ds.append(h('li', {class:'cert'}, f(p+'.name','span','lead','Distinction'), ' ', h('span', {class:'meta'}, f(p+'.issuer','span','','Organisme'), f(p+'.date','span','','Date')), ctl('distinctions', i, D.distinctions.length)));
+    });
+    m.append(sec('distinctions', 'Distinctions et reconnaissances', ds, addBtn('distinctions', 'Ajouter une distinction')));
+    return m;
+  }
+
+  function sideCol(){
+    var a = h('aside', null);
+    // Compétences
+    var sk = sec('competences', 'Compétences clés');
+    D.skills.forEach(function(g, gi){
+      var gp = 'skills.' + gi;
+      sk.append(h('div', {class:'skill-g'}, h('div', {class:'row'}, f(gp+'.group','h3','','Domaine'), ctl('skills', gi, D.skills.length)), strList(gp+'.items', 'Compétence', 'Ajouter')));
+    });
+    append(sk, addBtn('skills', 'Ajouter un domaine'));
+    a.append(sk);
+
+    // Langues
+    var lg = sec('langues', 'Langues');
+    D.languages.forEach(function(l, i){
+      if (!filled(l, ['name'])) return;
+      var p = 'languages.' + i, dots = h('div', {class:'dots', 'aria-hidden': editing ? null : 'true'});
+      for (var k = 1; k <= 5; k++) {
+        dots.append(editing ? h('button', {type:'button', class:'dot' + (k <= l.score ? ' on' : ''), 'data-act':'score', 'data-path':p+'.score', 'data-v':k, 'aria-label':'Niveau ' + k + ' sur 5'})
+                            : h('span', {class:'dot' + (k <= l.score ? ' on' : '')}));
+      }
+      lg.append(h('div', {class:'lang'}, h('div', {class:'row'}, h('span', null, f(p+'.name','span','lang-name','Langue'), ctl('languages', i, D.languages.length)), f(p+'.level','span','lang-level','Niveau')), dots));
+    });
+    append(lg, addBtn('languages', 'Ajouter une langue'));
+    a.append(lg);
+
+    // Outils
+    var tl = sec('outils', 'Outils numériques');
+    D.tools.forEach(function(g, gi){
+      var gp = 'tools.' + gi;
+      tl.append(h('div', {class:'tool-g'}, h('div', {class:'row'}, f(gp+'.group','h3','','Catégorie'), ctl('tools', gi, D.tools.length)), strList(gp+'.items', 'Outil', 'Ajouter', 'inline')));
+    });
+    append(tl, addBtn('tools', 'Ajouter une catégorie'));
+    a.append(tl);
+
+    a.append(sec('interets', 'Centres d’intérêt', strList('interests', 'Centre d’intérêt', 'Ajouter', 'inline')));
+
+    // Références
+    var rf = sec('references', 'Références');
+    D.references.forEach(function(r, i){
+      if (!filled(r, ['name'])) return;
+      var p = 'references.' + i;
+      rf.append(h('div', {class:'ref'}, h('div', {class:'row'}, f(p+'.name','span','lead','Nom'), ctl('references', i, D.references.length)), f(p+'.org','span','','Organisation'), editing || has(r.contact) ? h('div', null, lf(p+'.contact','Téléphone ou e-mail (facultatif)', function(v){ return /@/.test(v) ? 'mailto:' + v : 'tel:' + v.replace(/[^\d+]/g,''); })) : null));
+    });
+    append(rf, addBtn('references', 'Ajouter une référence'));
+    rf.append(f('referencesNote','p','ref-note','Note (ex. coordonnées sur demande)'));
+    a.append(rf);
+    return a;
+  }
+
+  function attestBlock(){
+    var A = D.attestation; if (!A) return null;
+    if (!editing && !document.body.classList.contains('signed')) return null;
+    var today = fmtDate(new Date().toISOString().slice(0,10));
+    var sig = has(A.signature) ? h('img', {src:A.signature, alt:'Signature', class:'sig-img'}) : h('div', {class:'sig-space', 'aria-hidden':'true'});
+    return h('section', {class:'attest', id:'attestation'},
+      editing && h('p', {class:'attest-hint'}, 'Attestation sur l\u2019honneur : elle n\u2019apparaît que lorsque vous cliquez sur « Version signée » avant d\u2019imprimer. Elle n\u2019est jamais visible sur la version en ligne.'),
+      f('attestation.text', 'p', 'attest-text', 'Texte de l\u2019attestation', true),
+      h('div', {class:'sig'},
+        h('p', null, 'Fait à ', f('attestation.place', 'span', '', 'Lieu'), ', le ', editing ? f('attestation.date', 'span', '', today + ' (automatique si vide)') : (has(A.date) ? A.date : today)),
+        sig,
+        h('p', {class:'sig-name'}, D.identity.name || ''),
+        editing && h('div', {class:'photo-act'},
+          h('button', {type:'button', class:'cb wide', 'data-act':'sig'}, has(A.signature) ? 'Changer la signature' : 'Ajouter une signature (image)'),
+          has(A.signature) && h('button', {type:'button', class:'cb wide', 'data-act':'nosig'}, 'Retirer la signature'))));
+  }
+
+  function fmtDate(iso){ try { return new Date(iso + 'T12:00:00').toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'}); } catch(e){ return iso; } }
+
+  function render(){
+    document.body.classList.toggle('editing', editing);
+    document.title = (D.identity.name || 'CV') + ' – CV';
+    var root = document.getElementById('cv');
+    root.replaceChildren(); append(root, [header(), h('div', {class:'cols'}, mainCol(), sideCol()), annexCol(), attestBlock(),
+      h('footer', {class:'foot'}, h('span', null, (D.identity.name || '') + ', curriculum vitae'), h('span', null, 'Dernière mise à jour : ' + fmtDate(D.meta.updated)))]);
+  }
+
+  /* ---------- édition ---------- */
+  var statusEl = document.getElementById('status'), banner = document.getElementById('banner');
+  function setStatus(t){ statusEl.textContent = t; }
+  function changed(){
+    dirty = true;
+    try { localStorage.setItem(KEY, JSON.stringify({at: Date.now(), data: D})); setStatus('Brouillon gardé dans ce navigateur'); }
+    catch(e){ setStatus('Modifications non enregistrées'); }
+  }
+  function showBanner(text, buttons){
+    banner.replaceChildren(h('p', null, text));
+    (buttons || []).forEach(function(b){ banner.append(h('button', {type:'button', 'data-act':b[1]}, b[0])); });
+    banner.append(h('button', {type:'button', 'data-act':'closebanner', 'aria-label':'Fermer'}, '×'));
+    banner.hidden = false;
+  }
+  function enterEdit(){
+    editing = true; render(); setStatus('Mode édition');
+    var draft = null;
+    try { draft = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch(e){}
+    if (draft && draft.data && JSON.stringify(draft.data) !== JSON.stringify(D)) {
+      showBanner('Un brouillon non enregistré du ' + new Date(draft.at).toLocaleString('fr-FR') + ' existe dans ce navigateur.', [['Reprendre le brouillon','restore'], ['L’ignorer','discard']]);
+    } else {
+      showBanner('Cliquez sur un texte pour le modifier. Les boutons ↑ ↓ × réorganisent ou suppriment un élément. Cliquez ensuite sur « Enregistrer le fichier HTML » pour obtenir la nouvelle version à héberger.');
+    }
+  }
+  function exitEdit(){ editing = false; banner.hidden = true; render(); }
+
+  function download(text, name, type){
+    var blob = new Blob([text], {type: type + ';charset=utf-8'});
+    var a = h('a', {href: URL.createObjectURL(blob), download: name});
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 4000);
+  }
+  function slug(){ return (D.identity.name || 'cv').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+
+  function serialize(){
+    var wasEditing = editing, wasSigned = document.body.classList.contains('signed');
+    editing = false; document.body.classList.remove('signed'); render();
+    var clone = document.documentElement.cloneNode(true);
+    clone.querySelector('#cv-data').textContent = '\n' + JSON.stringify(D, null, 2).replace(/<\//g, '<\\/') + '\n';
+    clone.querySelector('body').classList.remove('editing', 'ats', 'can-edit', 'signed');
+    var sb = clone.querySelector('[data-act="signed"]'); sb.textContent = 'Version signée'; sb.setAttribute('aria-pressed', 'false');
+    var b = clone.querySelector('#banner'); b.hidden = true; b.replaceChildren();
+    clone.querySelector('#status').textContent = '';
+    var ab = clone.querySelector('[data-act="ats"]'); ab.textContent = 'Version ATS'; ab.setAttribute('aria-pressed', 'false');
+    editing = wasEditing; if (wasSigned) document.body.classList.add('signed'); render();
+    return '<!DOCTYPE html>\n' + clone.outerHTML;
+  }
+  function exportHTML(){
+    D.meta.updated = new Date().toISOString().slice(0,10);
+    download(serialize(), 'cv-' + slug() + '.html', 'text/html');
+    FILE_JSON = JSON.stringify(D); dirty = false;
+    try { localStorage.removeItem(KEY); } catch(e){}
+    setStatus('Fichier enregistré');
+    showBanner('Nouvelle version téléchargée. Remplacez l’ancien fichier sur votre hébergement par celui-ci (renommez-le en index.html si besoin).');
+  }
+
+  function move(lp, i, d){ var arr = get(lp), j = i + d; var t = arr[i]; arr[i] = arr[j]; arr[j] = t; }
+
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-act]'); if (!b) return;
+    var act = b.getAttribute('data-act'), lp = b.getAttribute('data-list'), i = +b.getAttribute('data-i');
+    switch (act) {
+      case 'print': window.print(); break;
+      case 'ats':
+        var on = document.body.classList.toggle('ats');
+        b.textContent = on ? 'Version design' : 'Version ATS'; b.setAttribute('aria-pressed', on ? 'true' : 'false'); break;
+      case 'edit': enterEdit(); break;
+      case 'done': exitEdit(); break;
+      case 'save': exportHTML(); break;
+      case 'json': download(JSON.stringify(D, null, 2), 'cv-' + slug() + '-donnees.json', 'application/json'); break;
+      case 'import': document.getElementById('importInput').click(); break;
+      case 'up': move(lp, i, -1); changed(); render(); break;
+      case 'down': move(lp, i, 1); changed(); render(); break;
+      case 'del':
+        var item = get(lp)[i];
+        if (typeof item === 'object' && !confirm('Supprimer cet élément ?')) break;
+        get(lp).splice(i, 1); changed(); render(); break;
+      case 'add':
+        var key = lp.replace(/\.\d+/g, '.#');
+        get(lp).push(SHAPES[key] ? blank(SHAPES[key]) : '');
+        changed(); render();
+        var n = get(lp).length - 1, sel = '[data-path^="' + lp + '.' + n + '"]', el = document.querySelector(sel);
+        if (el) el.focus();
+        break;
+      case 'score': set(b.getAttribute('data-path'), +b.getAttribute('data-v')); changed(); render(); break;
+      case 'photo': document.getElementById('photoInput').click(); break;
+      case 'signed':
+        var sg = document.body.classList.toggle('signed');
+        b.textContent = sg ? 'Masquer l\u2019attestation' : 'Version signée'; b.setAttribute('aria-pressed', sg ? 'true' : 'false');
+        render(); if (sg) { var at = document.getElementById('attestation'); if (at) at.scrollIntoView({behavior:'smooth', block:'center'}); }
+        break;
+      case 'sig': document.getElementById('sigInput').click(); break;
+      case 'nosig': D.attestation.signature = ''; changed(); render(); break;
+      case 'nophoto': D.identity.photo = ''; changed(); render(); break;
+      case 'restore':
+        try { D = JSON.parse(localStorage.getItem(KEY)).data; } catch(err){}
+        banner.hidden = true; dirty = true; render(); setStatus('Brouillon repris'); break;
+      case 'discard': try { localStorage.removeItem(KEY); } catch(err){} banner.hidden = true; break;
+      case 'closebanner': banner.hidden = true; break;
+    }
+  });
+
+  document.addEventListener('input', function(e){
+    var el = e.target.closest && e.target.closest('[data-path][contenteditable]'); if (!el || !editing) return;
+    var v = el.hasAttribute('data-ml') ? el.innerText.replace(/\n{3,}/g, '\n\n').trim() : el.textContent.replace(/\s+/g, ' ');
+    set(el.getAttribute('data-path'), v); changed();
+  });
+  document.addEventListener('focusout', function(e){
+    var el = e.target.closest && e.target.closest('[data-path][contenteditable]'); if (!el) return;
+    var p = el.getAttribute('data-path'), v = get(p);
+    if (typeof v === 'string' && v !== v.trim()) set(p, v.trim());
+    if (!el.textContent.trim()) el.textContent = '';
+  });
+  document.addEventListener('keydown', function(e){
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'E' || e.key === 'e')) { e.preventDefault(); editing ? exitEdit() : enterEdit(); return; }
+    if (editing && (e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) { e.preventDefault(); exportHTML(); return; }
+    var el = e.target.closest && e.target.closest('[data-path][contenteditable]');
+    if (!el || e.key !== 'Enter' || el.hasAttribute('data-ml')) return;
+    e.preventDefault();
+    var m = el.getAttribute('data-path').match(/^(.*\.(?:bullets|items))\.(\d+)$/);
+    if (m && typeof get(el.getAttribute('data-path')) === 'string') {
+      var arr = get(m[1]), idx = +m[2] + 1; arr.splice(idx, 0, ''); changed(); render();
+      var nx = document.querySelector('[data-path="' + m[1] + '.' + idx + '"]'); if (nx) nx.focus();
+    } else el.blur();
+  });
+  document.addEventListener('paste', function(e){
+    var el = e.target.closest && e.target.closest('[contenteditable]'); if (!el) return;
+    e.preventDefault();
+    var t = (e.clipboardData || window.clipboardData).getData('text');
+    if (!el.hasAttribute('data-ml')) t = t.replace(/\s+/g, ' ');
+    document.execCommand('insertText', false, t);
+  });
+
+  document.getElementById('photoInput').addEventListener('change', function(){
+    var file = this.files && this.files[0]; this.value = ''; if (!file) return;
+    var img = new Image(), url = URL.createObjectURL(file);
+    img.onload = function(){
+      var s = Math.min(img.width, img.height), size = Math.min(360, s), c = document.createElement('canvas');
+      c.width = c.height = size;
+      c.getContext('2d').drawImage(img, (img.width - s) / 2, (img.height - s) / 2, s, s, 0, 0, size, size);
+      D.identity.photo = c.toDataURL('image/jpeg', 0.86); URL.revokeObjectURL(url); changed(); render();
+    };
+    img.onerror = function(){ showBanner('Cette image ne peut pas être lue. Choisissez un fichier JPG ou PNG.'); };
+    img.src = url;
+  });
+  document.getElementById('sigInput').addEventListener('change', function(){
+    var file = this.files && this.files[0]; this.value = ''; if (!file) return;
+    var img = new Image(), url = URL.createObjectURL(file);
+    img.onload = function(){
+      var k = Math.min(1, 600 / img.width), c = document.createElement('canvas');
+      c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      D.attestation.signature = c.toDataURL('image/png'); URL.revokeObjectURL(url); changed(); render();
+    };
+    img.onerror = function(){ showBanner('Cette image ne peut pas être lue. Choisissez un fichier JPG ou PNG.'); };
+    img.src = url;
+  });
+  document.getElementById('importInput').addEventListener('change', function(){
+    var file = this.files && this.files[0]; this.value = ''; if (!file) return;
+    file.text().then(function(t){
+      var d = JSON.parse(t); if (!d.identity || !d.experience) throw new Error('format');
+      D = d; changed(); render(); showBanner('Données importées. Vérifiez le CV puis enregistrez le fichier HTML.');
+    }).catch(function(){ showBanner('Ce fichier n’est pas un export de données de ce CV.'); });
+  });
+
+  window.addEventListener('beforeprint', function(){ if (editing) { editing = false; render(); window.__reEdit = true; } });
+  window.addEventListener('afterprint', function(){ if (window.__reEdit) { window.__reEdit = false; editing = true; render(); } });
+  window.addEventListener('beforeunload', function(e){ if (dirty && JSON.stringify(D) !== FILE_JSON) { e.preventDefault(); e.returnValue = ''; } });
+
+  // Le bouton « Modifier » n'apparaît que sur une copie locale (ou avec #modifier dans l'adresse)
+  var local = location.protocol === 'file:' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  if (local || location.hash === '#modifier') document.body.classList.add('can-edit');
+  render();
+  if (location.hash === '#modifier') enterEdit();
+  window.CV = { serialize: serialize, data: function(){ return D; } };
+})();
+</script>
+
+
+</body></html>
